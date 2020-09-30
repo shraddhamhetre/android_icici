@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "322700282150",
+    "firebase_url": "https://intelliwiz-813fe.firebaseio.com",
+    "project_id": "intelliwiz-813fe",
+    "storage_bucket": "intelliwiz-813fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322700282150:android:e8e3947c202318ce",
+        "android_client_info": {
+          "package_name": "com.youtility.intelliwiz20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322700282150-onhl8u02s5lb16cnca59a7ni40dtrsli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2zbLsndoEpoiipfQRjO-FZSunDW2yT3o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

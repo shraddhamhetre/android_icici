@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/docNoTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:text=""
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:id="@+id/docNameTV"
+            android:text=""/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/docID_imageview"
+            android:layout_weight="0.4"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/listviewDivider"/>
+</LinearLayout>

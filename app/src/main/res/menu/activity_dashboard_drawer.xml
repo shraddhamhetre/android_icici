@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <!--<item
+            android:id="@+id/nav_switchapplication"
+            android:icon="@drawable/ic_swap_horiz_black_24dp"
+            android:title="Switch Application" />-->
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/ic_class_black_24dp"
+            android:title="@string/navigation_drawer_aboutus" />
+        <item
+            android:id="@+id/nav_privacypolicy"
+            android:icon="@drawable/ic_class_black_24dp"
+            android:title="@string/navigation_drawer_privacypolicy" />
+        <item
+            android:id="@+id/nav_geofence"
+            android:icon="@drawable/baseline_trip_origin_black_24"
+            android:title="@string/navigation_drawer_geofence" />
+
+        <item
+            android:id="@+id/nav_settting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/navigation_drawer_setting" />
+        <item
+            android:id="@+id/nav_soslog"
+            android:icon="@drawable/sos"
+            android:title="@string/navigation_drawer_soslog" />
+
+        <item
+            android:id="@+id/nav_changePassword"
+            android:icon="@android:drawable/ic_lock_idle_lock"
+            android:visible="false"
+            android:title="@string/navigation_drawer_help" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/navigation_drawer_logout" />
+    </group>
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

@@ -1,0 +1,86 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="none"
+        android:key="login_user_name"
+        android:maxLines="1"
+        android:editable="false"
+        android:focusable="false"
+        android:enabled="false"
+        android:singleLine="true"
+        android:title="@string/pref_title_display_name"/>
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="none"
+        android:key="login_user_site"
+        android:maxLines="1"
+        android:focusable="false"
+        android:enabled="false"
+        android:editable="false"
+        android:singleLine="true"
+        android:textColor="@color/colorGreen"
+        android:title="@string/pref_title_site_name"/>
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="none"
+        android:key="login_user_imei"
+        android:maxLines="1"
+        android:focusable="false"
+        android:enabled="false"
+        android:editable="false"
+        android:singleLine="true"
+        android:title="@string/pref_title_device_imei"/>
+
+    <ListPreference
+        android:defaultValue="en"
+        android:entries="@array/pref_lang_type_titles"
+        android:entryValues="@array/pref_lang_type_values"
+        android:key="language_setting"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_lang_type"/>
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textCapWords"
+        android:key="emergency_contact_number"
+        android:maxLines="2"
+        android:enabled="false"
+        android:editable="false"
+        android:focusable="false"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_contact_number"/>
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textCapWords"
+        android:key="emergency_contact_email"
+        android:maxLines="2"
+        android:enabled="false"
+        android:editable="false"
+        android:focusable="false"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_contact_email"/>
+
+    <EditTextPreference
+        android:defaultValue="I need help"
+        android:capitalize="words"
+        android:inputType="textCapWords"
+        android:key="emergency_contact_msg"
+        android:maxLines="2"
+        android:enabled="false"
+        android:editable="false"
+        android:focusable="false"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_contact_msg"/>
+
+
+</PreferenceScreen>

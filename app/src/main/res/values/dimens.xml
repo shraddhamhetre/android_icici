@@ -1,0 +1,29 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_5_margin">5dp</dimen>
+    <dimen name="activity_10_margin">10dp</dimen>
+    <dimen name="activity_15_margin">15dp</dimen>
+    <dimen name="activity_20_margin">20dp</dimen>
+    <dimen name="nav_header_vertical_spacing">10dp</dimen>
+    <dimen name="nav_header_height">250dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_margin_10dp">10dp</dimen>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_margin5dp">5dp</dimen>
+    <dimen name="text_margin2dp">2dp</dimen>
+    <dimen name="text_margin10dp">10dp</dimen>
+    <dimen name="text_size15dp">15dp</dimen>
+    <dimen name="text_size18dp">18dp</dimen>
+    <dimen name="text_size12dp">12dp</dimen>
+    <dimen name="text_size24dp">24dp</dimen>
+    <dimen name="text_size28dp">28dp</dimen>
+    <dimen name="text_size10dp">10dp</dimen>
+
+    <dimen name="circleProgressRadius">10dp</dimen>
+    <dimen name="circleProgressThickness">5dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+</resources><!-- Default screen margins, per the Android Design guidelines. -->

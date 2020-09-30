@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:visibility="gone"
+            android:textAppearance="?attr/textAppearanceListItem"/>
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin5dp"
+            android:layout_weight="0.05"
+            android:textAppearance="?attr/textAppearanceListItem"/>
+        <!--<TextView
+            android:id="@+id/contentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin10dp"
+            android:layout_weight="0.27"
+            android:textAppearance="?attr/textAppearanceListItem"/>-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.95"
+            android:id="@+id/contentStatus"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/contentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin5dp"
+            android:textAppearance="?attr/textAppearanceListItem"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="1dp"
+        android:background="@color/listviewDivider"/>
+</LinearLayout>

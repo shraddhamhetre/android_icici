@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.youtility.intelliwiz20.Activities.SelfAttendanceActivity"
+    tools:showIn="@layout/activity_self_attendance">
+    <FrameLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:id="@+id/camera_preview"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintVertical_bias="1.0"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/capture"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom">
+            <TextClock
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:format12Hour="hh:mm a"
+                android:textStyle="bold"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:text="date"
+                android:id="@+id/currentdateTextView"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:text="user name"
+                android:id="@+id/userNameTextView"
+                android:padding="@dimen/text_margin5dp"
+                android:textColor="@android:color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/text_margin5dp"
+                android:weightSum="1">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin5dp"
+                    android:background="@drawable/rounder_corner_button"
+                    android:layout_weight="0.5"
+                    android:id="@+id/punchInButton"
+                    android:textColor="@android:color/white"
+                    android:text="@string/self_attendance_in" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin5dp"
+                    android:background="@drawable/rounder_delete_button"
+                    android:layout_weight="0.5"
+                    android:id="@+id/punchOutButton"
+                    android:textColor="@android:color/white"
+                    android:text="@string/self_attendance_out" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

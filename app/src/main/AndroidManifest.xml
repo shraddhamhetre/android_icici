@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.youtility.intelliwiz20"
+    android:installLocation="internalOnly">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+
+    <permission
+        android:name="android.permission.HARDWARE_TEST"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<!--
+    <uses-permission android:name="android.permission.SEND_SMS" />
+-->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:name="com.youtility.intelliwiz20.Activities.Baseclass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="true"
+        tools:ignore="ExtraText">
+        <service
+            android:name="com.youtility.intelliwiz20.Services.CaptchaConfigSettingService"
+            android:exported="false"></service>
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.RequestViewDetailsActivity"
+            android:label="@string/request_details_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.PPMPlannerView"
+            android:label="@string/title_activity_ppmplanner_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.RequestViewActivity"
+            android:label="@string/module_request"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.CampaignTrackingService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.youtility.intelliwiz20.BroadcastReceiver.NetworkDataReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.ServerSelectionActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity>
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.youtility.intelliwiz20.Activities.ApplicationAccessViewActivity" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.DashboardActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.AboutUsActivity"
+            android:label="@string/title_activity_about_us"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name="com.youtility.intelliwiz20.Activities.EmergencyContactInfoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.youtility.intelliwiz20.Activities.DashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.JOBListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+                <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="DashboardActivity"/>
+            -->
+        </activity>
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.JOBDetailActivity"
+            android:label="@string/job_title_item_list"
+            android:parentActivityName="com.youtility.intelliwiz20.Activities.JOBListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.youtility.intelliwiz20.Activities.JOBListActivity" />
+        </activity>
+        <!--<activity
+            android:name="com.youtility.intelliwiz20.Activities.SOSActivity"
+            android:exported="true"
+            android:icon="@drawable/dashbaord_sos"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:label="@string/sos"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.SOSActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.IncidentReportActivity"
+            android:label="@string/title_activity_incident_report"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.AttachmentListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.RecordAudioActivity"
+            android:label="@string/title_activity_record_audio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.MediaRecoderView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.IncidentReportQuestionActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.youtility.intelliwiz20.Services.SyncService"
+            android:exported="false" />
+        <service
+            android:name="com.youtility.intelliwiz20.Services.GetLocationService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.AdhocJobActivity"
+            android:label="@string/title_activity_adhoc_job"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.SelfAttendanceActivity"
+            android:label="@string/module_selfattendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.AttendanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.SiteListActivity"
+            android:label="Site List"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.AttendanceTakeActivity"
+            android:label="@string/title_activity_attendance_take"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.android.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.NFCCodeReaderActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.AttendanceMarkActivity"
+            android:label="@string/title_activity_attendance_mark"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.AttendanceCapturePhotoActivity"
+            android:label="@string/title_activity_attendance_capture_photo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.CapturePhotoActivity"
+            android:label="@string/title_activity_capture_photo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.VideoCaptureActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_video_capture"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.SosVideoCaptureActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_video_capture"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.AssetListActivity"
+            android:label="@string/title_asset_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.AssetDetailActivity"
+            android:label="@string/title_asset_detail"
+            android:parentActivityName="com.youtility.intelliwiz20.Activities.AssetListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.youtility.intelliwiz20.Activities.AssetListActivity" />
+        </activity>
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.PhotoAnnotationActivity"
+            android:label="@string/title_activity_photo_annotation"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.youtility.intelliwiz20.BroadcastReceiver.TrackPhoneEventReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.youtility.intelliwiz20.Services.UserGeofenceBreachService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.youtility.intelliwiz20.BroadcastReceiver.JobAlertBroadcast"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.youtility.intelliwiz20.Services.UploadImageService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.CheckpointListActivity"
+            android:label="@string/module_chkpoint"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name="com.youtility.intelliwiz20.Services.ActivityRecognitionIntentService"
+            android:exported="false" />
+        <!--
+            <activity
+            android:name=".Activities.CheckpointChildListActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar" />
+        -->
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.CheckpointChildListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.AdhocJobListActivityListActivity"
+            android:label="@string/title_adhocjoblistactivity_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.AdhocJobListActivityDetailActivity"
+            android:label="@string/title_adhocjoblistactivity_detail"
+            android:parentActivityName="com.youtility.intelliwiz20.Activities.AdhocJobListActivityListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.youtility.intelliwiz20.Activities.AdhocJobListActivityListActivity" />
+        </activity>
+        <!--
+            <activity
+            android:name=".Activities.SyncronizationViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar" />
+        -->
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.DialogActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar" /> <!-- android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar" -->
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.StepBuzzerDialogActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.SyncronizationViewActivity"
+            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" /> <!-- android:theme="@style/Theme.AppCompat.Transparent.NoActionBar    @android:style/Theme.Translucent.NoTitleBar    @style/Base.AlertDialog.AppCompat.Light" -->
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.IncidentReportListActivity"
+            android:label="@string/module_ir"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.youtility.intelliwiz20.Activities.JobneedReplyActivity" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.HelpDeskListActivity"
+            android:label="@string/module_ticket"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            -->
+        </activity>
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.HelpDeskDetailActivity"
+            android:label="@string/helpdesk_title_item_detail"
+            android:parentActivityName="com.youtility.intelliwiz20.Activities.HelpDeskListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.youtility.intelliwiz20.Activities.HelpDeskListActivity" />
+        </activity>
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.AdhocTicketActivity"
+            android:label="@string/title_activity_adhoc_ticket"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.UserLocationViewActivity"
+            android:label="@string/title_activity_user_location_view"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.SubmitMonthlyAttendanceActivity"
+            android:label="@string/title_activity_submit_monthly_attendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.ApproveMonthlyAttendanceActivity"
+            android:label="@string/title_activity_approve_monthly_attendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.SiteVisitedLogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.SosLogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name="com.youtility.intelliwiz20.BroadcastReceiver.BroadcastReceiverOnBootComplete"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.ConveyanceActivity"
+            android:label="@string/title_activity_conveyance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.SiteReportListActivity"
+            android:label="@string/title_activity_site_report_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name="com.youtility.intelliwiz20.Services.AutoSyncService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name="com.youtility.intelliwiz20.Services.SiteReportDoneOrNotCheckService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.youtility.intelliwiz20.Services.GetLocationGoogleAPIService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.NewGuardReferenceEntryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.youtility.intelliwiz20.Activities.CameraFocusActivity" />
+
+        <service
+            android:name="com.youtility.intelliwiz20.Services.JobAlertBroadcastService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.youtility.intelliwiz20.BroadcastReceiver.JobAlertBroadcast_Temp"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.youtility.intelliwiz20.Services.JobAlertService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.SiteVisitedLogExpLVActivity"
+            android:label="@string/title_activity_site_visited_log_exp_lv"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name="com.youtility.intelliwiz20.BroadcastReceiver.AppInstalled_UninstallReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.SiteInfoActivity"
+            android:label="Site Information"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.youtility.intelliwiz20.Services.BackgroundSoundService" />
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.SiteReportTemplateActivity"
+            android:label="Site Report Template"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.youtility.intelliwiz20.Services.GetStepCounterService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.StepCounterActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.youtility.intelliwiz20.Services.StepCountBuzzerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.WorkflowActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_workflow"
+            android:theme="@style/FullscreenTheme" />
+
+        <service
+            android:name="com.youtility.intelliwiz20.Services.UploadSelfAttendanceService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.TaskListActivity"
+            android:label="@string/title_activity_task_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.TaskDetailsActivity"
+            android:label="@string/title_activity_task_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name="com.youtility.intelliwiz20.BroadcastReceiver.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.youtility.intelliwiz20.BroadcastReceiver.AirplaneModeReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Services.AutoSyncService" />
+
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.AssetAuditActivity"
+            android:label="@string/title_activity_asset_audit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.TicketViewActivity"
+            android:label="@string/title_activity_ticket_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.TicketDetailsActivity"
+            android:label="Ticket Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.ForgotPasswordActivity"
+            android:label="Forgot Password" />
+        <activity
+            android:name="com.youtility.intelliwiz20.Activities.LeaveManagmentActivity"
+            android:label="@string/title_activity_leave_managment" />
+
+
+ <!--           &lt;!&ndash; BroadcastReceiver that listens for incoming SMS messages &ndash;&gt;
+            <receiver android:name=".SmsReceiver"
+                android:permission="android.permission.BROADCAST_SMS">
+                <intent-filter>
+                    <action android:name="android.provider.Telephony.SMS_DELIVER" />
+                </intent-filter>
+            </receiver>
+
+            &lt;!&ndash; BroadcastReceiver that listens for incoming MMS messages &ndash;&gt;
+            <receiver android:name=".MmsReceiver"
+                android:permission="android.permission.BROADCAST_WAP_PUSH">
+                <intent-filter>
+                    <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER" />
+                    <data android:mimeType="application/vnd.wap.mms-message" />
+                </intent-filter>
+            </receiver>
+
+            &lt;!&ndash; Activity that allows the user to send new SMS/MMS messages &ndash;&gt;
+            <activity android:name=".ComposeSmsActivity" >
+                <intent-filter>
+                    <action android:name="android.intent.action.SEND" />
+                    <action android:name="android.intent.action.SENDTO" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+                    <data android:scheme="sms" />
+                    <data android:scheme="smsto" />
+                    <data android:scheme="mms" />
+                    <data android:scheme="mmsto" />
+                </intent-filter>
+            </activity>
+
+            &lt;!&ndash; Service that delivers messages from the phone "quick response" &ndash;&gt;
+            <service android:name=".HeadlessSmsSendService"
+                android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE"
+                android:exported="true" >
+                <intent-filter>
+                    <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <data android:scheme="sms" />
+                    <data android:scheme="smsto" />
+                    <data android:scheme="mms" />
+                    <data android:scheme="mmsto" />
+                </intent-filter>
+            </service>-->
+    </application>
+
+</manifest>

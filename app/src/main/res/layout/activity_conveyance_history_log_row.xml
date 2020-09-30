@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/rounded_border_trans_solid"
+              android:layout_width="match_parent"
+              android:layout_margin="@dimen/activity_5_margin"
+              android:layout_height="wrap_content">
+<!--    <TextView
+        android:id="@+id/conveyanceReferTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/text_margin5dp"
+        android:background="@color/button_action_background"
+        android:textStyle="normal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/white" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/punchTypeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:padding="@dimen/text_margin5dp"
+            android:layout_weight="0.7"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/holo_green_dark" />
+        <TextView
+            android:id="@+id/punchTimestampTextView"
+            android:layout_weight="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:padding="@dimen/text_margin5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/conveyanceAddressTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/conveyanceDistanceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:padding="@dimen/text_margin5dp"
+        android:visibility="visible"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/conveyanceDurationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:padding="@dimen/text_margin5dp"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/conveyanceExpenseTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:padding="@dimen/text_margin5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black" />
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/siteInTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:padding="@dimen/text_margin5dp"
+
+            android:layout_weight="0.7"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/holo_green_dark" />
+        <TextView
+            android:id="@+id/siteInTimestampTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:padding="@dimen/text_margin5dp"
+
+            android:layout_weight="0.3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/siteOutTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:padding="@dimen/text_margin5dp"
+
+            android:layout_weight="0.7"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/holo_red_dark" />
+        <TextView
+            android:id="@+id/siteOutTimestampTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:padding="@dimen/text_margin5dp"
+
+            android:layout_weight="0.3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>-->
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/listviewDivider"/>-->
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jobneeddetails_jselectjobstatus"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialogStatusSpinner"
+            android:layout_marginTop="7dp"
+            style="?android:attr/spinnerItemStyle"/>
+
+        <EditText
+            android:id="@+id/editTextDialogRemark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:gravity="bottom|start"
+            android:maxLines="3"
+            android:hint="@string/jobneeddetails_jRemark"
+            android:lines="1" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:id="@+id/userRoleGrpLinerLayout"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jobneeddetails_jAssignedTo"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:visibility="visible"
+                android:padding="2dp"
+                android:gravity="center"
+                android:id="@+id/radioGroupContainer">
+                <RadioGroup
+                    android:id="@+id/dialogRadioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:layout_weight="0.1"
+                    android:weightSum="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                    <RadioButton
+                        android:layout_weight="0.50"
+                        android:id="@+id/radio0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:padding="5dp"
+                        android:gravity="start"
+                        android:textColor="@android:color/black"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/jobneeddetails_jPeople" />
+                    <RadioButton
+                        android:layout_weight="0.50"
+                        android:id="@+id/radio1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:padding="5dp"
+                        android:gravity="start"
+                        android:text="@string/jobneeddetails_jGroup"
+                        android:textColor="@android:color/black"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dialogUserGrpSpinner"
+                android:layout_marginTop="7dp"
+                style="?android:attr/spinnerItemStyle"/>
+        </LinearLayout>
+        <!-- <include
+            android:id="@+id/avpt_layout"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/avptbar" /> -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialogCancelButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/rounder_cancel_button"
+                android:text="@string/button_cancel" />
+            <Button
+                android:id="@+id/dialogDoneButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounder_corner_button"
+                android:text="@string/button_done" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

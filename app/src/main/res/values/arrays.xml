@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="gt_module_img">
+        <item>@drawable/ic_class_black_24dp</item>
+        <item>@drawable/ic_exit_to_app_black_24dp</item>
+        <item>@drawable/ic_swap_horiz_black_24dp</item>
+        <item>@drawable/ic_class_black_24dp</item>
+        <item>@drawable/ic_exit_to_app_black_24dp</item>
+        <item>@drawable/ic_swap_horiz_black_24dp</item>
+    </integer-array>
+
+    <integer-array name="sa_module_img">
+        <item>@drawable/ic_class_black_24dp</item>
+        <item>@drawable/ic_exit_to_app_black_24dp</item>
+        <item>@drawable/ic_swap_horiz_black_24dp</item>
+        <item>@drawable/ic_class_black_24dp</item>
+        <item>@drawable/ic_exit_to_app_black_24dp</item>
+        <item>@drawable/ic_swap_horiz_black_24dp</item>
+        <item>@drawable/ic_exit_to_app_black_24dp</item>
+        <item>@drawable/ic_swap_horiz_black_24dp</item>
+    </integer-array>
+
+    <integer-array name="iw_module_img">
+        <item>@drawable/ic_class_black_24dp</item>
+        <item>@drawable/ic_exit_to_app_black_24dp</item>
+        <item>@drawable/ic_swap_horiz_black_24dp</item>
+        <item>@drawable/ic_class_black_24dp</item>
+    </integer-array>
+
+    <!--<item>EMERGENCY</item>
+    <item>@string/module_task</item>
+    <item>@string/module_ticket</item>
+    <item>@string/module_asset</item>
+    <item>@string/module_ir</item>
+    <item>PANIC</item>
+    <item>@string/module_chkpoint</item>
+    <item>@string/module_sitetour</item>
+    <item>SITE VISITED</item>
+    <item>SITE NOT VISITED</item>
+    <item>@string/module_userlocation</item>
+    <item>@string/module_addleave</item>
+    <item>LEADER BOARD</item>
+    <item>@string/module_reading</item>
+    <item>@string/module_selfattendance</item>
+    <item>@string/module_siteattendance</item>
+    <item>@string/module_takeattendance</item>-->
+
+    <!--<string-array name="application_modules_code_array">
+        <item>@string/module_task_code</item>
+        <item>@string/module_ticket_code</item>
+        <item>@string/module_asset_code</item>
+        <item>@string/module_ir_code</item>
+        <item>@string/module_panic_code</item>
+        <item>@string/module_chkpoint_code</item>
+        <item>@string/module_userlocation_code</item>
+        <item>@string/module_selfattendance_code</item>
+        <item>@string/module_siteattendance_code</item>
+        <item>@string/module_takeattendance_code</item>
+        <item>@string/module_aoattendance_code</item>
+        <item>@string/module_bmattendance_code</item>
+        <item>@string/module_sitetour_code</item>
+        <item>@string/module_sitevisited_code</item>
+        <item>@string/module_addleave_code</item>
+        <item>@string/module_leaderboard_code</item>
+
+    </string-array>-->
+
+    <!--<string-array name="application_modules_array">
+        <item>@string/module_task</item>
+        <item>@string/module_ticket</item>
+        <item>@string/module_asset</item>
+        <item>@string/module_ir</item>
+        <item>PANIC</item>
+        <item>@string/module_chkpoint</item>
+        <item>@string/module_userlocation</item>
+        <item>@string/module_selfattendance</item>
+        <item>@string/module_siteattendance</item>
+        <item>@string/module_takeattendance</item>
+        <item>@string/module_sitetour</item>
+        <item>@string/module_sitevisited</item>
+        <item>@string/module_addconveyance</item>
+        <item>@string/module_ppm</item>
+        <item>@string/module_empreference</item>
+        <item>@string/module_aoattendance</item>
+
+    </string-array>-->
+
+    <integer-array name="application_modules_img">
+        <item>@drawable/dashboard_task</item><!-- task -->
+        <item>@drawable/dashboard_ticket</item><!-- ticket -->
+        <item>@drawable/dashboard_asset</item><!-- asset -->
+        <item>@drawable/dashboard_ir</item><!-- ir -->
+        <item>@drawable/dashbaord_sos</item><!-- panic -->
+        <item>@drawable/dashboard_checkpoint</item><!-- checkpoint -->
+        <item>@drawable/dashboard_userlocation</item><!-- userloaction -->
+        <item>@drawable/dashboard_selfie</item><!-- self attendance -->
+        <item>@drawable/dashboard_siteattendance</item><!-- site attendacne -->
+        <item>@drawable/dashboard_takeattendance</item><!-- take attendance -->
+        <item>@drawable/dashboard_sitetour</item><!-- sitetour -->
+        <item>@drawable/dashboard_sitelog</item><!-- site visited log -->
+        <item>@drawable/dashboard_conveyance</item><!-- conveyance -->
+        <item>@drawable/dashboard_ppm</item><!-- ppm -->
+        <item>@drawable/dashboard_empreference</item><!-- emp reference -->
+        <item>@drawable/dashboard_workflow</item><!-- WORK FLOW-->
+        <item>@drawable/ic_group_black</item><!-- Asset Audit-->
+        <item>@drawable/dashboard_request</item><!-- Request-->
+        <item>@drawable/ic_group_black</item><!--area officer -->
+        <item>@drawable/ic_group_black</item><!-- branch manager -->
+        <item>@drawable/dashboard_ir</item><!-- Sitevisitplan -->
+
+    </integer-array>
+
+    <!--<item>@drawable/ic_group_black</item>&lt;!&ndash; area officer &ndash;&gt;
+    <item>@drawable/ic_group_black</item>&lt;!&ndash; branch manager&ndash;&gt;-->
+
+    <integer-array name="trasnport_mode_img">
+        <item>@drawable/dashboard_selfie</item><!-- Bus -->
+        <item>@drawable/dashboard_selfie</item><!-- Bike -->
+        <item>@drawable/dashboard_selfie</item><!-- Boat -->
+        <item>@drawable/dashboard_selfie</item><!-- Cab -->
+        <item>@drawable/dashboard_selfie</item><!-- Car -->
+        <item>@drawable/dashboard_selfie</item><!-- Plane -->
+        <item>@drawable/dashboard_selfie</item><!-- Rickshaw -->
+        <item>@drawable/dashboard_selfie</item><!-- Train -->
+
+    </integer-array>
+
+
+</resources>

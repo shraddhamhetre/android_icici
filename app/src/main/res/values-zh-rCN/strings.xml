@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="application_modules_array">
+        <item>@string/module_task</item>
+        <item>@string/module_ticket</item>
+        <item>@string/module_asset</item>
+        <item>@string/module_ir</item>
+        <item>@string/module_panic</item>
+        <item>@string/module_chkpoint</item>
+        <item>@string/module_userlocation</item>
+        <item>@string/module_selfattendance</item>
+        <item>@string/module_siteattendance</item>
+        <item>@string/module_takeattendance</item>
+        <item>@string/module_sitetour</item>
+        <item>@string/module_sitevisited</item>
+        <item>@string/module_addconveyance</item>
+        <item>@string/module_ppm</item>
+        <item>@string/module_empreference</item>
+        <item>@string/module_workflow</item>
+        <item>@string/module_assetaudit</item>
+        <item>@string/module_request</item>
+        <item>@string/module_aoattendance</item>
+        <item>@string/module_bmattendance</item>
+    </string-array>
+
+    <!--<item>@string/module_aoattendance</item>
+    <item>@string/module_bmattendance</item>-->
+
+    <string name="module_task">任务</string>
+    <string name="module_ticket">票单</string>
+    <string name="module_asset">物资</string>
+    <string name="module_ir">事件报告</string>
+    <string name="module_chkpoint">巡检点</string>
+    <string name="module_sitetour">场所巡逻</string>
+    <string name="module_userlocation">用户位置</string>
+    <string name="module_addconveyance">输送</string>
+    <string name="module_selfattendance">自助考勤</string>
+    <string name="module_siteattendance">场所考勤</string>
+    <string name="module_takeattendance">考勤</string>
+    <string name="module_aoattendance">区域巡警</string>
+    <string name="module_bmattendance">BRANCH MANAGER</string>
+    <string name="module_sitevisited">场所日志</string>
+    <string name="module_ppm">计划预防性维护</string>
+    <string name="module_empreference">员工介绍人</string>
+    <string name="module_panic">恐慌</string>
+    <string name="module_workflow">工作流程</string>
+    <string name="module_assetaudit">資產審計</string>
+
+    <string name="title_activity_dashboard">仪表板</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="navigation_drawer_setting">设置</string>
+    <string name="navigation_drawer_help">更改密碼</string>
+    <string name="navigation_drawer_logout">登出</string>
+    <string name="navigation_drawer_aboutus">关于我们</string>
+    <string name="navigation_drawer_privacypolicy">隐私政策</string>
+    <string name="navigation_drawer_geofence">地理圍欄</string>
+
+
+    <string name="dashboard_backbutton_msg">再按后退一次退出应用程序。</string>
+    <string name="dashboard_entrynotsync_msg">数据未同步。 请在注销前同步</string>
+    <string name="dashboard_entriesnotsync_msg">数据未同步。 请在注销前同步。</string>
+    <string name="dashboard_doyouwantlogoutmsg">你想退出吗？</string>
+
+    <!--Common-->
+    <string name="alerttitle">警报</string>
+    <string name="check_internet_connection_msg">请检查互联网连接！</string>
+    <string name="autodatetimeMessage">請啟用自動日期和時間設置以繼續。</string>
+    <string name="autoGPSMessage">請啟用GPS繼續。</string>
+    <string name="offlinemode_alert_message">此操作只能在连接到互联网时完成。 请检查您的互联网连接，然后重试。</string>
+    <string name="no_internet_connection">没有网络连接！</string>
+    <string name="internet_connection_available">回到網上</string>
+    <string name="please_wait">请稍候..</string>
+    <string name="data_not_found">数据不可用</string>
+    <string name="questionset_not_available">问题组不可用</string>
+
+    <string name="button_cancel">取消</string>
+    <string name="button_yes">是</string>
+    <string name="button_no">不是</string>
+    <string name="button_done">完成</string>
+    <string name="button_add">加</string>
+    <string name="button_start">開始</string>
+    <string name="button_stop">停</string>
+    <string name="button_save">保存</string>
+    <string name="button_submit">提交</string>
+    <string name="button_ok">好</string>
+    <string name="button_close">关</string>
+    <string name="button_next">下一個</string>
+    <string name="button_checkout">登出</string>
+    <string name="button_details">More Details</string>
+
+
+    <!--Sync view Activity-->
+    <string name="sync_dialog_syncinprogress">正在進行同步..</string>
+    <string name="sync_dialog_failed_msg">同步失敗！</string>
+    <string name="server_data_sync">請等待同步完成..</string>
+    <string name="sync_dialog_title">同步</string>
+    <string name="sync_dialog_success_msg">同步成功！</string>
+    <string name="sync_dialog_upload_msg">正在上傳資料..</string>
+    <string name="sync_dialog_datauploaded">數據已上傳。</string>
+    <string name="sync_dialog_download_msg">正在下載資料..</string>
+    <string name="sync_dialog_datadownloaded">數據已下載。</string>
+
+    <!--Job List-->
+    <string name="joblist_pending_title">待定</string>
+    <string name="joblist_completed_title">已完成</string>
+    <string name="joblist_all_title">所有</string>
+    <string name="jobinfo_dialog_title">时间表 %1$s 概要</string>
+    <string name="select_quest_set_title1">选择问题组</string>
+    <string name="select_quest_set_title2">选择清单 </string>
+    <string name="joblist_assetcodenotfound">找不到物资代码</string>
+    <string name="joblist_selecturchoice_title">你的选择</string>
+    <string name="joblist_enterassetcode">输入物资代码</string>
+    <string name="joblist_nfcnotsupported">此设备不支持NFC</string>
+
+    <string name="job_alert_msg_yourtaskis">你的任务是 </string>
+    <string name="job_alert_msg_dueattime">到期时间 </string>
+    <string name="job_has_expired">工作已经过期了。</string>
+    <string name="job_is_future">不可在定事前法执行 %1$s.</string>
+    <string name="job_has_completed">工作已经完成。</string>
+    <string name="job_has_closed">工作已经结束。</string>
+    <string name="job_quest_not_assigned">未分配的問題!!</string>
+
+    <string name="joblist_startjob_title">你想開始</string>
+    <string name="joblist_assetcodemismatched">資產代碼不匹配</string>
+
+    <string name="joblist_schedulecount_title">計畫數量</string>
+    <string name="joblist_pendingcount_title">待定數量</string>
+    <string name="joblist_completecount_title">完成數量</string>
+    <string name="joblist_autoclosedcount_title">自動關閉數量</string>
+
+    <string name="job_alert_msg_title">工作到期警報</string>
+    <string name="gf_alert_msg_title">地理圍欄犯規</string>
+
+    <!--JOB need details view-->
+    <string name="jobneeddetails_id">ID</string>
+    <string name="jobneeddetails_jTNo">工作號碼：</string>
+    <string name="jobneeddetails_jDesc">描述：</string>
+    <string name="jobneeddetails_jPDate">計畫日期：</string>
+    <string name="jobneeddetails_jEDate">到期日：</string>
+    <string name="jobneeddetails_jGTime">寬限時間</string>
+    <string name="jobneeddetails_jCat">票单类别：</string>
+    <string name="jobneeddetails_jFreq">頻率：</string>
+    <string name="jobneeddetails_jType">类型：</string>
+    <string name="jobneeddetails_jStatus">狀態：</string>
+    <string name="jobneeddetails_jPriority">优先序：</string>
+    <string name="jobneeddetails_jAssignedBy">分配人：</string>
+    <string name="jobneeddetails_jAssignedTo">分配给：</string>
+    <string name="jobneeddetails_jAttCount">附件數量：</string>
+    <string name="jobneeddetails_jReply">答覆</string>
+    <string name="jobneeddetails_jHistory">歷史</string>
+    <string name="jobneeddetails_jReading">演出</string>
+    <string name="jobneeddetails_jDetails">細節</string>
+    <string name="jobneeddetails_jselectjobstatus">選擇工作狀態</string>
+    <string name="jobneeddetails_jRemark">备注</string>
+    <string name="jobneeddetails_jPeople">人</string>
+    <string name="jobneeddetails_jGroup">组</string>
+    <string name="jobneeddetails_jShowHistory">顯示歷史</string>
+    <string name="jobneeddetails_jattchment">附件</string>
+
+    <!-- adhoc job need-->
+    <string name="title_activity_adhoc_job">临时工作</string>
+    <string name="adhoc_succeed">临时工作成功创建</string>
+    <string name="adhoc_failed">无法创建临时工作。</string>
+    <string name="adhoc_fill_req_info">请填写所需信息！</string>
+    <string name="adhoc_questionset_error">请选择问题组。</string>
+    <string name="adhoc_questionname_title">问题名称</string>
+
+    <string name="adhoc_search">搜索</string>
+    <string name="adhoc_info">信息</string>
+    <string name="action_schedule">时间表</string>
+    <string name="action_adhoc">特别指定</string>
+
+    <string name="adhoc_desc">描述：</string>
+    <string name="adhoc_tNo">工作號碼：</string>
+    <string name="adhoc_tcat">票单类别：</string>
+    <string name="adhoc_smartplace">物资/智能地点：</string>
+    <string name="adhoc_qset">问题组：</string>
+    <string name="adhoc_priority">优先序：</string>
+    <string name="adhoc_assignto">分配给：</string>
+    <string name="adhoc_people">人</string>
+    <string name="adhoc_group">组</string>
+    <string name="adhoc_self">自己</string>
+    <string name="adhoc_remark">备注：</string>
+    <string name="adhoc_attchcount">附件</string>
+    <string name="adhoc_perform">演出</string>
+    <string name="count_zero">00</string>
+
+    <!--Incident report Question Activity-->
+    <string name="fill_mandetory_error_msg">请填写所有字段中的数据，然后尝试保存</string>
+    <string name="fill_mandetoryfield_error_msg">请填写强制性问题!!</string>
+    <string name="fill_value_in_properrange_msg">请在给定范围内输入值</string>
+    <string name="fill_value_emailid_msg">请提供正确的电子邮件ID</string>
+    <string name="fill_value_selectdate_title">选择日期</string>
+    <string name="fill_value_selecttime_title">选择时间</string>
+    <string name="fill_value_multipleoption_title">多选项选择</string>
+
+    <string name="ir_template_not_found">找不到事件報告範本！</string>
+
+    <!--User Location-->
+    <string name="userlocation_notfound_error">找不到最後的已知位置</string>
+
+    <!--Help Desk List-->
+    <string name="action_date">日期</string>
+    <string name="action_priority">优先序</string>
+
+
+    <!--Help Desk Details-->
+    <string name="helpdesk_title_item_detail">工單明細</string>
+    <string name="ticket_id">ID</string>
+    <string name="ticket_jTNo">工單號：</string>
+    <string name="ticket_jTCreatedon">創建於：</string>
+    <string name="ticket_jDesc">描述：</string>
+    <string name="ticket_jAsset">物资/智能地点：</string>
+    <string name="ticket_jQset">问题组：</string>
+    <string name="ticket_jAssignedBy">分配人：</string>
+    <string name="ticket_jAssignedTo">分配给：</string>
+    <string name="ticket_jCat">票单类别：</string>
+    <string name="ticket_jAttCount">附件數量：</string>
+    <string name="ticket_jReadingDetails">閱讀細節</string>
+    <string name="ticket_jAttDetails">附件詳情</string>
+    <string name="ticket_jStatus">狀態：</string>
+    <string name="ticket_jPerformby">執行人</string>
+    <string name="ticket_jassetlocation">位置：</string>
+    <string name="ticket_jAction">行動</string>
+    <string name="ticket_jHistory">歷史</string>
+    <string name="ticket_jSelectaction">選擇行動</string>
+    <string name="ticket_jRemark">备注</string>
+    <string name="ticket_jAttachment">附件</string>
+
+    <string name="ticket_list_row_ticketno">工單號：％1$d</string>
+
+    <!-- adhoc Ticket-->
+    <string name="title_activity_adhoc_ticket">特设机票</string>
+    <string name="adhoc_ticket_desc">描述：</string>
+    <string name="adhoc_ticket_tcat">票单类别：</string>
+    <string name="adhoc_ticket_priority">优先序：</string>
+    <string name="adhoc_ticket_location">位置：</string>
+    <string name="adhoc_ticket_assignto">分配给：</string>
+    <string name="adhoc_ticket_people">人</string>
+    <string name="adhoc_ticket_group">组</string>
+    <string name="adhoc_ticket_remark">备注：</string>
+    <string name="adhoc_ticket_attchcount">附件</string>
+
+    <string name="adhoc_ticket_succeed">临时票单已成功创建</string>
+
+    <string name="ticket_custom_open_reply">答覆</string>
+    <string name="ticket_custom_cancelled">取消</string>
+    <string name="ticket_custom_complete">完成</string>
+    <string name="ticket_custom_new">新</string>
+    <string name="ticket_custom_escalated">升級</string>
+
+    <string name="ticket_error_msg_remark">請輸入備註！</string>
+    <string name="ticket_start_alert_msg">你想開始這張工單</string>
+
+    <!--Asset Listview-->
+    <string name="title_asset_list">物资/智能地点</string>
+    <string name="title_asset_detail">資產明細</string>
+    <string name="asset_location_view">位置： %1$s</string>
+    <string name="assetlistactivity_messge1">物资已经存在 </string>
+
+    <!--Asset Details-->
+    <string name="asset_code">代码：</string>
+    <string name="asset_name">名称：</string>
+    <string name="asset_enable">启用：</string>
+    <string name="asset_iscritical">至关重要的：</string>
+    <string name="asset_identifier">标识符：</string>
+    <string name="asset_runningstatus">运行状态：</string>
+    <string name="asset_location">位置：</string>
+    <string name="asset_type">类型：</string>
+    <string name="asset_cat">类别：</string>
+    <string name="asset_subcat">子类别：</string>
+    <string name="asset_brand">牌：</string>
+    <string name="asset_model">模型：</string>
+    <string name="asset_supplier">供应商：</string>
+    <string name="asset_capacity">容量：</string>
+    <string name="asset_unit">单元：</string>
+    <string name="asset_yom">制造年份：</string>
+    <string name="asset_msn">制造序列号：</string>
+    <string name="asset_bdate">账单日期：</string>
+    <string name="asset_pdate">购买日期：</string>
+    <string name="asset_insdate">安装日期：</string>
+    <string name="asset_billvalue">账单价值：</string>
+    <string name="asset_service">服务：</string>
+    <string name="asset_serprov">服务提供者：</string>
+    <string name="asset_sfdate">服务开始日期：</string>
+    <string name="asset_stdate">服务终止日期：</string>
+    <string name="asset_meter">仪表编号：</string>
+    <string name="asset_address">地址：</string>
+    <string name="asset_landmark">地标：</string>
+    <string name="asset_mobile">手机号码：</string>
+    <string name="asset_phone">电话号码：</string>
+    <string name="asset_website">网站：</string>
+    <string name="asset_geolocation">地理位置：</string>
+    <string name="asset_mfactor">多因素：</string>
+
+
+    <!--SOS Activity-->
+    <string name="sos_emergency_contact_num_error">请提供紧急联系电话！</string>
+    <string name="sos_starting">将发送恐慌警报</string>
+    <string name="sos_cancelled">恐慌警报被取消</string>
+    <string name="sos_sent">发出恐慌警报</string>
+    <string name="sos_sending">发送恐慌帮助。</string>
+    <string name="sos_help_message">I, %1$s %2$s.</string>
+    <string name="sos_my_location">我的位置： https://maps.google.com/maps?q=%1$s,%2$s</string>
+    <string name="sos_sendingpanic">发送恐慌帮助。</string>
+
+    <!--Tour Activity-->
+    <string name="tour_checklistnotavailable">清单不可用</string>
+    <string name="tour_parent">上级</string>
+    <string name="tour_checkpoint_completed">巡检点已经完成</string>
+    <string name="tour_checkpoint_closed">巡检查已经关闭</string>
+    <string name="tour_incorrect_asset_chkpoint">物资巡检点不正确</string>
+
+    <!--Self attendance-->
+    <string name="title_activity_self_attendance">自助考勤</string>
+    <string name="self_attendance_in">进入</string>
+    <string name="self_attendance_out">离开</string>
+
+    <!--Action bar titles-->
+    <string name="action_notvisitedsites">未訪問</string>
+
+
+
+    <!--old strings-->
+    <string name="app_name">Intelliwiz 2.0</string>
+    <string name="company_name">Youtility Technologies Pvt Ltd.</string>
+
+
+    <string name="login_actionbar_title">登入</string>
+    <string name="login_credential_error">請輸入正確的憑據</string>
+    <string name="login_capability_failed">用戶登錄成功。用戶沒有移動存取權限。</string>
+    <string name="login_user_code_error">輸入用戶代碼</string>
+    <string name="login_user_password_error">輸入使用者密碼</string>
+    <string name="login_user_sitecode_error">輸入場所代碼</string>
+    <string name="login_sitename_hint">場所代碼</string>
+    <string name="login_username_hint">用戶名</string>
+    <string name="login_userpassword_hint">密碼</string>
+    <string name="button_login">登錄</string>
+    <string name="application_update_alert_msg">新版Youtility2.0可用。你想更新它嗎？</string>
+
+    <string name="ngentry_firstname_hint">第一</string>
+    <string name="ngentry_middlename_hint">中間</string>
+    <string name="ngentry_lastname_hint">持續</string>
+    <string name="ngentry_laddress_hint">本地地址</string>
+    <string name="ngentry_naddress_hint">原屬地址</string>
+    <string name="ngentry_areacode_hint">區號</string>
+    <string name="ngentry_mobilenumber_hint">手機號碼</string>
+    <string name="ngentry_otherqualification_hint">其他</string>
+    <string name="ngentry_height_hint">高度 (cm)</string>
+    <string name="ngentry_weight_hint">重量 (kg)</string>
+    <string name="ngentry_waist_hint">腰圍 (cm)</string>
+    <string name="ngentry_currentemployment_hint">目前職業</string>
+    <string name="ngentry_lengthofservice_hint">服務年限</string>
+    <string name="ngentry_calculatedAge_hint">年齡：％1$s</string>
+    <string name="ngentry_identificationmark_hint">識別標記</string>
+    <string name="ngentry_religion_hint">宗教</string>
+    <string name="ngentry_cast_hint">等級</string>
+    <string name="ngentry_physicalcondition_hint">健康狀況</string>
+    <string name="ngentry_handicapped_hint">殘疾</string>
+
+    <string name="ngentry_lcity_hint">當地城市</string>
+    <string name="ngentry_lstate_hint">當地省份</string>
+    <string name="ngentry_ncity_hint">原屬城市</string>
+    <string name="ngentry_nstate_hint">原屬省份</string>
+    <string name="ngentry_nareacode_hint">區號</string>
+    <string name="ngentry_seletdate">選擇日期</string>
+
+    <string name="ngentry_error_referedname">輸入推薦名稱</string>
+    <string name="ngentry_error_fname">輸入名字</string>
+    <string name="ngentry_error_lname">輸入姓氏</string>
+    <string name="ngentry_error_mobilenumber">輸入手機號碼</string>
+    <string name="ngentry_error_dob">出生日期是必填的。</string>
+    <string name="ngentry_error_religion">請輸入宗教信仰</string>
+    <string name="ngentry_error_cast">請輸入等級</string>
+    <string name="ngentry_error_idmark">輸入識別標記</string>
+    <string name="ngentry_error_height">高度 (cm)</string>
+    <string name="ngentry_error_weight">重量 (kg)</string>
+    <string name="ngentry_error_waist">腰圍 (cm)</string>
+    <string name="ngentry_error_phycondition">請輸入身體狀況</string>
+
+    <string name="ngentry_added_successfully_msg">已成功添加員工推薦資料</string>
+
+    <string name="guardtour">Guard Tour</string>
+    <string name="siteaudit">Site Audit</string>
+    <string name="intelliwiz">Intelliwiz</string>
+    <string name="attendance">Attendance</string>
+    <string name="inventory">Inventory</string>
+    <string name="ereg">e-Register</string>
+
+    <string-array name="appName_array">
+        <item>@string/guardtour</item>
+        <item>@string/siteaudit</item>
+        <item>@string/intelliwiz</item>
+        <item>@string/attendance</item>
+        <item>@string/inventory</item>
+        <item>@string/ereg</item>
+    </string-array>
+
+
+    <string-array name="application_modules_code_array">
+        <item>@string/module_task_code</item>
+        <item>@string/module_ticket_code</item>
+        <item>@string/module_asset_code</item>
+        <item>@string/module_ir_code</item>
+        <item>@string/module_panic_code</item>
+        <item>@string/module_chkpoint_code</item>
+        <item>@string/module_userlocation_code</item>
+        <item>@string/module_selfattendance_code</item>
+        <item>@string/module_siteattendance_code</item>
+        <item>@string/module_takeattendance_code</item>
+        <item>@string/module_sitetour_code</item>
+        <item>@string/module_sitevisited_code</item>
+        <item>@string/module_addconveyance_code</item>
+        <item>@string/module_ppm_code</item>
+        <item>@string/module_empreference_code</item>
+        <item>@string/module_workflow_code</item>
+        <item>@string/module_assetaudit_code</item>
+        <item>@string/module_request_code</item>
+        <item>@string/module_aoattendance_code</item>
+        <item>@string/module_bmattendance_code</item>
+    </string-array>
+
+    <!--<item>@string/module_aoattendance_code</item>
+    <item>@string/module_bmattendance_code</item>-->
+
+    <string-array name="application_modules_desc_array">
+        <item>Easy to see schedule and created task.</item>
+        <item>Easy to see schedule and created ticket.</item>
+        <item>Record maintenance of each asset</item>
+        <item>Real-time and structured incident reports with  audio, photo and video.</item>
+        <item>Send an alert in emergency.</item>
+        <item>Guard tours are scheduled and assigned to the user individually or based on group the user belongs to</item>
+        <item>Keep track of surveyors or auditors geographical location in real-­time</item>
+        <item>Real-time attendance </item>
+        <item>Real-time attendance </item>
+        <item>Real-time attendance </item>
+        <item>Easy creation and management of large number of sites and  workforce records.</item>
+        <item>Show the visited sites.</item>
+        <item>Keep tack of conveyance.</item>
+        <item>Leaderboard</item>
+        <item>Employee Reference</item>
+        <item>Work Flow</item>
+        <item>Asset Audit</item>
+        <item>Request</item>
+        <item>Area Officer</item>
+        <item>Branch Manager</item>
+    </string-array>
+
+    <!--<item>Area Officer</item>
+    <item>Branch Manager</item>-->
+
+
+    <string name="module_task_code">TASK</string>
+    <string name="module_ticket_code">TICKET</string>
+    <string name="module_asset_code">ASSET</string>
+    <string name="module_ir_code">INCIDENTREPORT</string>
+    <string name="module_chkpoint_code">CHECKPOINT</string>
+    <string name="module_sitetour_code">SITETOUR</string>
+    <string name="module_userlocation_code">USERLOCATION</string>
+    <string name="module_addconveyance_code">CONVEYANCE</string>
+    <string name="module_selfattendance_code">SELFATTENDANCE</string>
+    <string name="module_siteattendance_code">SITEATTENDANCE</string>
+    <string name="module_takeattendance_code">TAKEATTENDANCE</string>
+    <string name="module_panic_code">PANIC</string>
+    <string name="module_sitevisited_code">SITEVISITLOG</string>
+    <string name="module_ppm_code">PPMPLANNER</string>
+    <string name="module_aoattendance_code">AREAOFFICER</string>
+    <string name="module_bmattendance_code">BRANCHMANAGER</string>
+    <string name="module_empreference_code">EMPLOYEEREFERENCE</string>
+    <string name="module_workflow_code">WORKFLOW</string>
+    <string name="module_assetaudit_code">ASSETAUDIT</string>
+
+
+    <string name="action_done">完成</string>
+    <string name="action_upload">上傳</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_visitedsites">訪問</string>
+
+    <string name="action_all">所有</string>
+
+    <string name="action_call">呼叫</string>
+
+
+    <string name="action_settings">設置</string>
+    <string name="title_activity_setting">設置</string>
+    <string name="action_siteinfo">場所資訊</string>
+
+
+    <string name="action_asc">A-Z</string>
+    <string name="action_desc">Z-A</string>
+    <string name="search_hint">搜索</string>
+
+
+    <string name="action_audio">音訊</string>
+    <string name="action_video">視頻</string>
+    <string name="action_picture">圖片</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">常規的</string>
+
+    <string name="pref_title_lang_type">語言</string>
+    <string-array name="pref_lang_type_titles">
+        <item>英語</item>
+        <item>印地語</item>
+        <item>中文簡體</item>
+        <item>中文繁體</item>
+    </string-array>
+    <string-array name="pref_lang_type_values">
+        <item>en</item>
+        <item>hi</item>
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+    </string-array>
+
+    <string name="pref_title_video_rec">錄影長度</string>
+    <string-array name="pref_video_length_titles">
+        <item>10秒</item>
+        <item>20秒</item>
+        <item>30秒</item>
+        <item>40秒</item>
+        <item>50秒</item>
+        <item>60秒</item>
+    </string-array>
+    <string-array name="pref_video_length_values">
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+        <item>40000</item>
+        <item>50000</item>
+        <item>60000</item>
+    </string-array>
+
+    <!--<string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>-->
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">數據＆amp; 同步</string>
+
+    <string name="pref_title_sync_frequency">同步頻率</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>5 分鐘</item>
+        <item>10 分鐘</item>
+        <item>15 分鐘</item>
+        <item>30 分鐘</item>
+        <item>1 小時</item>
+        <item>3 小時</item>
+        <item>6 小時</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+    </string-array>
+
+    <string name="pref_title_location_tracking_frequency">位置跟蹤頻率</string>
+    <string-array name="pref_location_tracking_titles">
+        <item>1分鐘</item>
+        <item>5分鐘</item>
+        <item>10分鐘</item>
+        <item>15分鐘</item>
+        <item>30分鐘</item>
+    </string-array>
+    <string-array name="pref_location_tracking_values">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+
+    <string name="pref_title_activity_recognition_frequency">活動識別頻率</string>
+    <string-array name="pref_activity_recognition_titles">
+        <item>5分鐘</item>
+        <item>10分鐘</item>
+        <item>15分鐘</item>
+        <item>20分鐘</item>
+        <item>30分鐘</item>
+    </string-array>
+    <string-array name="pref_activity_recognition_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">通知</string>
+
+    <string name="pref_title_alert_type">警報類型</string>
+    <string-array name="pref_alert_type_titles">
+        <item>聲音+振動</item>
+        <item>只有聲音</item>
+        <item>僅振動</item>
+    </string-array>
+    <string-array name="pref_alert_type_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_origin_point_title">輸入原地點</string>
+    <string name="pref_captcha_title">蜂鳴器類型</string>
+    <string-array name="pref_captcha_type_titles">
+        <item>驗證碼</item>
+        <item>NFC</item>
+        <item>QR</item>
+    </string-array>
+    <string-array name="pref_captcha_type_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="title_activity_about_us">關於我們</string>
+    <!--<string name="dummy_button">聯繫我們 -</string>-->
+    <string name="job_title_item_list">任務列表</string>
+    <string name="job_title_item_detail">任務細節</string>
+
+    <string name="title_activity_incident_report">事件報告</string>
+    <string name="title_activity_record_audio">錄製音訊</string>
+    <string name="title_activity_incident_report_question">事故報告調查問卷</string>
+    <!--<string name="ir_comments">評論 -</string>-->
+    <string name="title_activity_attendance_capture_photo">拍攝照片</string>
+
+
+
+    <string name="selfie_attendance_alert_title">出勤</string>
+    <string name="selfie_attendance_alert_message">註冊!! \ n謝謝。</string>
+    <string name="title_activity_attendance_take">考勤</string>
+
+    <!--<string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>-->
+
+    <!--  zxing string -->
+    <string name="button_custom_product_search">自訂搜索</string>
+    <string name="button_share_by_email">通過電子郵件分享</string>
+    <string name="button_share_by_sms">通過短信分享</string>
+    <string name="button_web_search">網路搜索</string>
+    <string name="contents_contact">聯繫資訊</string>
+    <string name="contents_email">電子郵寄地址</string>
+    <string name="contents_location">地理座標</string>
+    <string name="contents_phone">電話號碼</string>
+    <string name="contents_sms">短信地址</string>
+    <string name="contents_text">純文字</string>
+    <string name="msg_camera_framework_bug">對不起，Android相機遇到了問題。您可能需要重新開機設備。</string>
+    <string name="msg_default_meta">中繼資料</string>
+    <string name="msg_default_mms_subject">Hi</string>
+    <string name="msg_default_status">在取景器矩形內放置條碼進行掃描。</string>
+    <string name="msg_google_shopper_missing">未安裝Google Shopper</string>
+    <string name="msg_install_google_shopper">Google Shopper無需打開流覽器即可用條碼掃描來合併線上和本地價格，評論等。你想試試嗎？</string>
+    <string name="msg_intent_failed">抱歉，無法啟動請求的應用程式。條碼內容可能無效。</string>
+    <string name="msg_share_subject_line">這是我掃描的條碼的內容</string>
+    <string name="result_text">找到純文字</string>
+
+    <string name="leaveSharePref">LeaveSharePref</string>
+    <string name="title_activity_attendance_mark">考勤</string>
+    <string name="title_activity_capture_photo">拍攝照片</string>
+    <string name="title_activity_video_capture">捕獲視頻</string>
+    <string name="title_activity_settings">設置</string>
+
+    <string name="pref_title_social_recommendations">啟用社交推薦</string>
+    <string name="pref_description_social_recommendations">根據您的消息歷史記錄建議連絡人
+    </string>
+
+    <string name="pref_title_display_name">登錄用戶名</string>
+    <string name="pref_title_site_name">登錄用戶默認場所</string>
+    <string name="pref_title_device_imei">設備IMEI</string>
+    <string name="pref_title_contact_number">緊急聯繫電話</string>
+    <string name="pref_title_contact_email">緊急聯繫電子郵件ID</string>
+    <string name="pref_title_contact_msg">緊急求助資訊</string>
+
+    <string name="pref_title_add_friends_to_messages">添加好友至信息中</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_photo_annotation">照片注釋</string>
+
+    <!--Asset string-->
+    <string name="assetlistactivity_status_color_working">WORKING</string>
+    <string name="assetlistactivity_status_color_standby">STANDBY</string>
+    <string name="assetlistactivity_status_color_maintenance">MAINTENANCE</string>
+    <string name="assetlistactivity_status_changed">改變狀態</string>
+
+    <string name="button_update">更新</string>
+    <string name="button_notnow">現在不需要</string>
+
+    <string name="phoneevent_gpson">GPS已開啟</string>
+    <string name="phoneevent_gpsoff">GPS已關閉</string>
+    <string name="phoneevent_phoneoff">手機關機了</string>
+    <string name="phoneevent_phoneon">手機已打開</string>
+    <string name="phoneevent_airplaneoff">飛機模式已關閉</string>
+    <string name="phoneevent_airplaneon">飛機模式已開啟</string>
+    <string name="phoneevent_batterylow">電量不足</string>
+    <string name="phoneevent_mobiledatadisable">移動資料禁用</string>
+    <string name="phoneevent_mobiledataenable">啟用移動資料</string>
+    <string name="phoneevent_wifidisable">Wi-Fi禁用</string>
+    <string name="phoneevent_wifienable">啟用Wi-Fi</string>
+
+    <string name="geofence_entered">已進入 ％1$s 地理圍欄。</string>
+    <string name="geofence_breached">已違規了 ％1$s 的地理圍欄。</string>
+
+
+
+    <string name="title_activity_checkpoint_list">巡檢點列表</string>
+
+    <string name="select_quest_set_title">選擇調查表格</string>
+
+    <!--UPDATE asset SET mdtz=now(), muser="+loginPref.getLong(Constants.LOGIN_PEOPLE_ID,-1)+" runningstatus='"+runningStatus+"' WHERE  assetcode= '"+assetCode+"' returning assetcode-->
+    <string name="asset_update">UPDATE asset SET mdtz=now(), muser= %1$d ,runningstatus=\'%2$d\' where assetcode= \'%3$s\' returning *</string>
+    <string name="jobneeddetail_update">UPDATE jobneeddetails SET answer =\'%1$s\' where jndid = %2$d returning *</string>
+    <string name="jobneedhistory_query">select * from getjobneedhistory(%1$d) where attachmenttype = %2$s</string>
+    <string name="jobneedattachment_query">select * from getjobneedattachments(%1$d)</string>
+    <!--<string name="getSites">select * from sitepeople where peopleid=%1$d and now() between fromdt and uptodt</string>-->
+    <string name="getSites">select sp.*, b.buid, b.bucode, b.buname from sitepeople sp INNER JOIN bu b on b.buid=sp.buid where peopleid=%1$d and now() between fromdt and uptodt</string>
+    <!--select sp.*, b.buid, b.bucode, b.buname from sitepeople sp INNER JOIN bu b on b.buid=sp.buid where peopleid=5017475717563657 and now() between fromdt and uptodt-->
+    <!--<string name="downloadImageFromWeb">http://192.168.1.254:8000/download?filename=%1$s&amp;filepath=%2$s&amp;type=image/png&amp;</string>-->
+
+    <!--About us String-->
+    <string name="aboutus_dbversion">資料庫版本：％1$d</string>
+    <string name="aboutus_osversion">Android作業系統版本：％1$s</string>
+    <string name="aboutus_appversion">應用版本：％1$s</string>
+    <string name="aboutus_support">支持：</string>
+    <string name="aboutus_supportmsg">我們的熱線隨時歡迎任何詢問或回饋。請隨時從表格中給我們發送電子郵件，我們會儘快回復您</string>
+    <string name="aboutus_supportemail">support@youtility.in</string>
+    <string name="aboutus_visitus">訪問我們</string>
+    <string name="aboutus_visitusurl">http://www.youtility.in</string>
+    <string name="aboutus_contactus">聯繫我們</string>
+    <string name="aboutus_feedbackform_title">保持聯繫</string>
+    <string name="aboutus_feedbackform_yourname_hint">你的名字</string>
+    <string name="aboutus_feedbackform_youremail_hint">你的郵件</string>
+    <string name="aboutus_feedbackform_yourcontact_hint">你的聯繫方式</string>
+    <string name="aboutus_feedbackform_yourcomment_hint">在這裡寫評論......</string>
+
+    <string name="othersite_sitename_hint">場所名稱</string>
+    <string name="othersite_sitecode_hint">場所代碼</string>
+
+
+
+    <!--Application Assess view-->
+    <string name="applist_actionbar_title">應用</string>
+
+    <!--Attendance-->
+    <string name="attendance_empcode">員工代碼：％1$s</string>
+    <string name="attendance_nfc_error">該設備不支援NFC。</string>
+
+    <!--Client code activity-->
+    <string name="permission_not_granted">許可未獲批准，請授予許可</string>
+    <string name="entersitecode_error">輸入場所代碼</string>
+
+    <!--Dashboard-->
+    <!--<string name="dashboard_nav_bar_header_title">%1$s >> %2$s</string>-->
+    <string name="dashboard_nav_bar_header_title">%1$s</string>
+    <string name="sync_dialog_cancel_msg">取消..</string>
+
+    <string name="sync_dialog_uploading">上傳........</string>
+    <string name="sync_dialog_downloading">下載.......</string>
+    <string name="sync_dialog_updating">更新.......</string>
+    <string name="sync_dialog_finalizing">正在完成.......</string>
+
+    <string name="dashboard_noaccess">無法訪問</string>
+    <string name="dashboard_noaccess_msg">該模組需要存取權限。</string>
+    <string name="dashboard_sync_fb">同步</string>
+
+    <string name="sync_assetmaster_failed">資產主數據下載失敗</string>
+    <string name="sync_jobNeedmaster_failed">任務主資料下載失敗</string>
+    <string name="sync_jobNeedDetailsmaster_failed">任務詳細資料下載失敗</string>
+    <string name="sync_typeassistmaster_failed">資產輔助主資料下載失敗</string>
+    <string name="sync_geofenceDetailsmaster_failed">地理圍欄詳細資料下載失敗</string>
+    <string name="sync_peoplemaster_failed">員工主數據下載失敗</string>
+    <string name="sync_groupemaster_failed">組主數據下載失敗</string>
+    <string name="sync_attendancehisotymaster_failed">考勤歷史主資料下載失敗</string>
+    <string name="sync_questionmaster_failed">問題主資料下載失敗</string>
+    <string name="sync_questionsetmaster_failed">問題集主資料下載失敗</string>
+    <string name="sync_questionsetbelongingmaster_failed">問題集主資料下載失敗</string>
+    <string name="sync_peoplegroupbelongingmaster_failed">員工所屬組主數據下載失敗</string>
+    <string name="sync_sitesmaster_failed">場所下載失敗</string>
+
+    <string name="sync_uploadPeopleEventLog_failed">人員事件日誌上傳失敗</string>
+    <string name="sync_uploadDeviceEventLog_failed">設備事件日誌上載失敗</string>
+    <string name="sync_uploadJobNeedLog_failed">工作需要日誌上傳失敗</string>
+    <string name="sync_uploadJobNeedReplyLog_failed">工作需要回復日誌上傳失敗</string>
+    <string name="sync_uploadJobNeedInsertLog_failed">工作需要日誌上傳失敗</string>
+
+    <string name="sync_dialog_update_msg">更新資料..</string>
+    <string name="sync_dialog_finalize_msg">最終確定資料..</string>
+    <string name="sync_dataupdating_failed">資料更新失敗。</string>
+
+    <string name="adhoc_default_description">臨時任務 ％1$s</string>
+    <string name="adhoc_default_remark">臨時任務備註</string>
+
+    <!-- Attendance sheet -->
+    <string name="switch_absent">Absent</string>
+    <string name="switch_present">Present</string>
+    <string name="switch_approve">Approve</string>
+    <string name="switch_reject">Reject</string>
+    <string name="weeklyoff">WO: </string>
+    <string name="nationalholiday">NH: </string>
+    <string name="extraduty">ED: </string>
+    <string name="total_count1">Total(PD+WO): </string>
+    <string name="total_count2">Total(PD+WO+ED+NH): </string>
+    <string name="attendance_sheet_remark">Remark</string>
+
+    <!-- Attendance -->
+    <string name="attendance_nfc">NFC</string>
+    <string name="attendance_qrcode">二維碼</string>
+    <string name="attendance_enter">輸入</string>
+    <string name="attendance_enteremployeecode">輸入員工代碼</string>
+    <string name="attendance_employeecode">員工代碼</string>
+    <string name="attendance_button_attendancein">上班</string>
+    <string name="attendance_button_attendanceout">下班</string>
+
+    <!-- Tour -->
+    <string name="scheduletour_title">巡邏計畫</string>
+    <string name="adhoctour_title">臨時巡檢點</string>
+
+    <string name="progressbar_values">%1$d / %2$d</string>
+
+    <string name="radio_yes">Yes</string>
+    <string name="radio_no">No</string>
+    <string name="radio_na">Na</string>
+
+    <string name="audioRecording_start">開始錄製</string>
+    <string name="audioRecording_stop">開始錄製</string>
+    <string name="audioRecording_count">00:00:00</string>
+
+    <string name="videoRecording_start">開始</string>
+    <string name="videoRecording_stop">停止</string>
+    <string name="videoRecording_count">00:00:00</string>
+
+    <string name="photoannotation_drawmode">繪製模式</string>
+    <string name="photoannotation_textmode">添加文字</string>
+
+    <string name="sitelist_reportto">場所總管：％1$s</string>
+    <string name="readingdetail_answer">答案：％1$s</string>
+
+    <!-- Add expences related -->
+    <string name="expence_travelstartat">巡邏開始於：％1$s</string>
+    <string name="expence_travelstartlocation">開始位置：％1$s</string>
+    <string name="expence_travelmode">巡邏模式：％1$s</string>
+    <string name="expence_travelstopat">巡邏停在：％1$s</string>
+    <string name="expence_travelstoplocation">停止位置：％1$s</string>
+    <string name="expence_travelexpence">巡邏花費：％1$s</string>
+    <string name="expence_traveldistance">巡邏距離（米）：％1$s</string>
+    <string name="expence_travelduration">巡邏時間（分鐘）：％1$s</string>
+    <string name="expence_startlocaddress_hint">開始位置位址</string>
+    <string name="expence_endlocaddress_hint">結束位置地址</string>
+    <string name="expence_amout_hint">費用金額</string>
+
+    <!-- Attendance sheet related -->
+    <string name="asheet_totalduties_title">Total Duties: </string>
+    <string name="asheet_totalwoff_title">Total Weeklyoff: </string>
+    <string name="asheet_contrduties_title">Contract Duties: </string>
+    <string name="asheet_noremark_hint">No Remark </string>
+
+    <!-- database queries-->
+    <string name="get_request_question_query">select * from qsetbelonging
+                                                inner join question q on qsetbelonging.questionid=q.questionid
+                                                where questionsetid= %1$d
+                                                order by qsetbelonging.seqno ASC</string>
+    <string name="get_question_query">select qs.questionsetid,q.questionname,q.questionid,q.type,q.unit,q.cuser,q.cdtz,q.muser,q.mdtz, qs.assetid, qsb.min, qsb.max, qsb.option, qsb.seqno, qsb.alerton, qsb.ismandatory,q.alerton from questionset qs inner join qsetbelonging qsb on qsb.questionsetid= qs.questionsetid inner join question q on qsb.questionid = q.questionid where qs.questionsetid= %1$d order by qsb.seqno ASC</string>
+    <string name="get_questionsetname_query">SELECT qsetname FROM questionset WHERE questionsetid= %1$d</string>
+    <string name="get_questionsetcode_query">SELECT qs.questionsetid, qs.qsetname,qs.seqno, ta.taname FROM questionset qs INNER JOIN typeassist ta ON ta.taid=qs.type AND ta.tacode=\'INCIDENTREPORTTEMPLATE\' WHERE qs.parent=-1 AND qs.buid = %1$d</string>
+    <string name="get_siteaudit_questionsetcode_query">SELECT qs.questionsetid, qs.qsetname,qs.seqno, ta.taname FROM questionset qs INNER JOIN typeassist ta ON ta.taid=qs.type AND ta.tacode=\'SITEREPORTTEMPLATE\' WHERE qs.parent=-1  AND qs.buid = %1$d</string>
+
+    <string name="get_siteaudit_templates_query">SELECT qs.questionsetid, qs.qsetname,qs.seqno FROM questionset qs WHERE qs.questionsetid in( %1$s )</string>
+    <string name="get_assetadhoc_templates_query">SELECT qs.questionsetid, qs.qsetname,qs.seqno FROM questionset qs INNER JOIN typeassist ta ON ta.taid=qs.type AND ta.tacode=\'QUESTIONSET\' and tatype=\'Question Set Type\' WHERE qs.questionsetid IN( %1$s )</string>
+    <string name="get_assetmaintance_templates_query">SELECT qs.questionsetid, qs.qsetname,qs.seqno, qs.type, ta.taname FROM questionset qs INNER JOIN typeassist ta ON ta.taid=qs.type AND ta.tacode=\'ASSETMAINTENANCE\' AND tatype=\'Question Set Type\' WHERE qs.questionsetid in( %1$s ) </string>
+    <string name="get_checkpointadhoc_templates_query">SELECT qs.questionsetid, qs.qsetname,qs.seqno, qs.type, ta.taname FROM questionset qs INNER JOIN typeassist ta ON ta.taid=qs.type AND ta.tacode=\'CHECKLIST\' AND tatype=\'Question Set Type\' WHERE qs.questionsetid in( %1$s ) </string>
+
+    <string name="get_question_subsetcode_query">SELECT distinct qs.questionsetid, qs.qsetname,qs.seqno, qsb.questionsetid FROM questionset qs INNER JOIN qsetbelonging qsb ON qsb.questionsetid=qs.questionsetid WHERE qs.parent=%1$d order by qs.seqno</string>
+    <string name="get_sitevisitedlog_query">select * from getcurrentmonthsitevisitlog( %1$d )</string>
+
+    <string name="downloadImageFromWeb">%1$sdownload?filename=%2$s&amp;filepath=%3$s&amp;type=image/png&amp;</string>
+    <string name="title_activity_conveyance">ConveyanceActivity</string>
+
+    <string name="conveyance_not_getting_address_frm_gps">無法從GPS資料中提取位址，請手動輸入位址</string>
+    <string name="conveyance_error_fill_all_info">請填寫所有資訊，然後嘗試開始巡邏。</string>
+
+
+    <!-- Scan Type Alertview -->
+    <string name="scantypealert_enterassetcode">輸入資產代碼</string>
+    <string name="title_activity_site_report_list">場所行動報表</string>
+    <string name="title_activity_camera">CameraActivity</string>
+
+    <string name="no_front_camera">沒有前置攝像頭</string>
+    <string name="photoannotation_title">要添加照片注釋嗎？</string>
+
+    <string-array name="units_array">
+        <item>Unit(mts.)</item>
+        <item>Unit(cms.)</item>
+        <item>Unit(ft.)</item>
+        <item>Unit(in.)</item>
+    </string-array>
+
+    <!-- Site Check in, out -->
+    <!--<string name="site_checkout_msg">Please proceed with site <![CDATA[<b><font color=#FF0000>CHECK OUT</font></b>]]> for %1$s</string>-->
+    <!--<string name="site_checkin_msg">Do you want to proceed site <![CDATA[<b><font color=#0000FF>CHECK IN</font></b>]]> for %1$s</string>-->
+    <string name="site_checkout_msg">Please proceed with site <font fgcolor="#ffff0000">CHECK OUT</font> for %1$s</string>
+    <string name="site_checkin_msg">Do you want to proceed site <font fgcolor="#0000FF">CHECK IN</font> for %1$s ?</string>
+    <string name="title_activity_site_visited_log_exp_lv">SiteVisitedLogExpLVActivity</string>
+    <string name="site_checkout_msg1">Do you want to proceed site <font fgcolor="#0000FF">CHECK OUT</font> for %1$s ?</string>
+    <string name="site_templatenotfound">找不到場所審核報告範本！</string>
+    <string name="site_checkout_msg2">Please proceed with site CHECK_OUT for %1$s</string>
+    <string name="site_submitreport">Please submit site report for %1$s</string>
+    <string name="checkin_alert_title">登入</string>
+    <string name="checkout_alert_title">登出</string>
+
+    <string name="error_msg_grant_permission">請授予所有權限</string>
+
+    <!--Emergency Contact info-->
+    <string name="emergency_contact_title">緊急連絡人</string>
+    <string name="title_adhocjoblistactivity_list">臨時工作清單</string>
+    <string name="title_adhocjoblistactivity_detail">臨時工作細節</string>
+    <string name="title_activity_incident_report_list">事故報告清單</string>
+    <string name="helpdesk_title_item_list">工單</string>
+     <string name="title_activity_user_location_view">地圖</string>
+    <string name="title_activity_submit_monthly_attendance">Submit Monthly Attendance</string>
+    <string name="title_activity_approve_monthly_attendance">Approve Monthly Attendance</string>
+
+    <!--question Set and Question-->
+    <string name="doyouwanttoexit">你想退出嗎？</string>
+    <string name="fill_value_email_hint">abc@gmail.com</string>
+    <string name="fill_value_dob_hint">1970年1月1日</string>
+
+    <string name="title_attachment_list">附件</string>
+    <string name="title_sitevisitlog">場所訪問日誌</string>
+    <string name="ir_comments">注釋</string>
+
+    <string name="title_activity_workflow">工作流程</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_task_list">任務列表</string>
+    <string name="title_home">首頁</string>
+    <string name="title_dashboard">儀錶板</string>
+    <string name="title_notifications">通知</string>
+    <string name="title_activity_task_details">任務細節</string>
+    <string name="title_activity_asset_audit">資產審計</string>
+    <string name="title_activity_ticket_view">工單視圖</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_leave_managment">Leave Managment</string>
+    <string name="get_question_count_query">select count(*) from questionset qs inner join qsetbelonging qsb on qsb.questionsetid= qs.questionsetid inner join question q on qsb.questionid = q.questionid where qs.questionsetid= %1$d order by qsb.seqno ASC</string>
+    <string name="get_assetauditadhoc_templates_query">SELECT qs.questionsetid, qs.qsetname,qs.seqno, qs.type, ta.taname FROM questionset qs INNER JOIN typeassist ta ON ta.taid=qs.type AND ta.tacode=\'ASSETAUDIT\' AND tatype=\'Question Set Type\' ORDER BY qs.seqno ASC </string>
+    <string name="jobneeddetails_jQuestionSet">Question Set:</string>
+
+    <!--added on 30 may 2019-->
+    <string name="take_attendance_enter_employee_code">請輸入員工代碼</string>
+    <string name="take_attendance_mark_present_msg">謝謝，已被標記為在場員工</string>
+    <string name="take_attendance_entercode_type">員工代碼/號碼</string>
+    <string name="adhoc_checkpoint_completed_msg">臨時巡檢點完成。</string>
+    <string name="conveyance_runningstory_empty_msg">您的輸送狀態將在此處顯示。</string>
+    <string name="conveyance_runningstory_start_msg">您的巡邏 從 ％1$s 每 ％2$s 在 ％3$s</string>
+    <string name="conveyance_runningstory_end_msg">您的巡邏 從 ％1$s 每 ％2$s 在 ％3$s \ n ------- \ n 停止於 ％4$s 在 ％5$s</string>
+    <string name="conveyance_history_title">輸送歷史</string>
+    <string name="conveyance_history_not_fount">未找到輸送歷史記錄。</string>
+    <string name="irlistactivity_reportsubmittedalready">已經提交。</string>
+    <string name="login_not_get_deviceimei">無法獲取設備資訊</string>
+    <string name="photoannotation_alerttitle">照片注釋</string>
+    <string name="photoannotation_addtexttoimage">添加文本到圖像</string>
+    <string name="serverselection_notablefetchinfo">無法獲取資訊，請重試。</string>
+    <string name="serverselection_provideclientcode">請提供客戶代碼</string>
+    <string name="srtemplate_chkout_succeed">場所登出成功</string>
+    <string name="srtemplate_onereport_needtofill">至少需要填寫一份報告</string>
+    <string name="srtemplate_chkout_withoutform">請在不填寫表格的情況下輸入登出原因。</string>
+    <string name="sitevisitlog_findinguserlog">查找使用者場所日誌歷史，請稍候..</string>
+    <string name="sos_simnotavailabel">Sim卡無法使用</string>
+    <string name="buzzer_dialog_title">蜂鳴器</string>
+    <string name="buzzer_error_captchanotmatched">驗證碼不匹配!!</string>
+    <string name="buzzer_error_captchanotentered">沒有輸入驗證碼！！</string>
+    <string name="stepcounter_reconfig_succeed">重新配置成功</string>
+    <string name="stepcounter_totalstepcount">總步驟 </string>
+    <string name="jobneeddetails_detailsnotfound">找不到工作細節。</string>
+    <string name="quetsetdetails_title">問題集詳情</string>
+    <string name="tasklist_bottomnavigation_count">數量</string>
+    <string name="ticketdetails_ticketresolved">工單已經解決。</string>
+    <string name="ticketdetails_replyhistorynotfound">未找到工單回復歷史記錄。</string>
+    <string name="ticketdetails_attachmenthistorynotfound">未找到工單附件歷史記錄</string>
+    <string name="ticketview_autoclosetab">自動關閉工單</string>
+    <string name="ticketview_nomorerecord">沒有更多記錄。</string>
+    <string name="ticketview_nomoreautoclosedrecord">未找到自動關閉的工票</string>
+    <string name="userlocationview_findinguserlocation">正在查找用戶最後的已知位置，請稍候..</string>
+    <string name="videorecording_recordvideomoreseconds">你想錄製更多 ％1$d 秒的視頻嗎？</string>
+    <string name="fill_value_enternumval_msg">請輸入數值</string>
+    <string name="fill_value_charremains">剩餘字元：％1$d / 250</string>
+    <string name="sitelistview_siteincharge">場所負責人</string>
+    <string name="sitelistview_siteinchargenotavail">場所負責人無法使用</string>
+    <string name="sitelistview_siteincharge_dialogtitle">場所負責人名稱</string>
+    <string name="sitelistview_numbercopied">聯繫號碼已複製。</string>
+    <string name="attendance_registered">考勤已登記。謝謝。</string>
+    <string name="joblist_autoclosed_title">自動關閉</string>
+    <string name="assetsummary_totalasset">總資產 ： </string>
+    <string name="feedbackform_fillallinfo">請填寫表格..</string>
+    <string name="othersite_addnew_error">請選擇場所名稱或輸入新場所名稱</string>
+    <string name="alertdialog_sitechkoutremark">請輸入備註</string>
+    <string name="alertdialog_enteremp_or_ticketnumber">請輸入員工代碼/工單編號</string>
+    <string name="login_failed">登錄失敗。</string>
+    <string name="title_activity_ppmplanner_view">PPM Planner View</string>
+    <string name="title_sitenotvisited">Site Not Visited</string>
+
+    <!--Request View Activity-->
+    <string name="request_id">ID</string>
+    <string name="request_type">Request Type</string>
+    <string name="request_template">Request Template</string>
+    <string name="request_on">Request On</string>
+    <string name="request_details">Details</string>
+    <string name="request_details_title">Request Details</string>
+    <string name="request_showtemplatelist">Show Templates List</string>
+    <string name="request_showrequestedlist">Show Requested List</string>
+
+
+    <string name="module_request_code">REQUEST</string>
+    <string name="module_request">REQUEST</string>
+    <string name="gps_coordinate_notavailable">GPS coordinates are not available</string>
+
+    <!--Sync Summary view-->
+    <string name="lsynsummary_title">Last Sync Summary</string>
+    <string name="lsynsummary_name">Name</string>
+    <string name="lsynsummary_succeed">Succeed</string>
+    <string name="lsynsummary_failed">Failed</string>
+
+    <string name="assetsummary_dialog_title">Asset Summary</string>
+
+    <!--Site information-->
+    <string name="siteinfo_sitename">Name of the site</string>
+    <string name="siteinfo_siteadd">Address</string>
+    <string name="siteinfo_sitelandmark">Landmark</string>
+    <string name="siteinfo_sitepcode">Postal Code</string>
+    <string name="siteinfo_sitegps">GPS Cordinate</string>
+    <string name="siteinfo_sitetotalstrength">Total Strength</string>
+    <string name="siteinfo_sitedetails">Details</string>
+    <string name="siteinfo_sitecontactperson">Contact Person</string>
+    <string name="siteinfo_sitecontactnumber">Contact Number</string>
+
+    <string name="selectpunchtype_dialogtitle">Select punch type</string>
+    <string name="take_attendance_present">Present</string>
+    <string name="take_attendance_captemppic">Capture Employee picture</string>
+    <string name="take_attendance_selfiewithemp">Take selfie with employee</string>
+
+    <string name="othersite_dialog_title">Other Site</string>
+    <string name="othersite_dialog_searchsitename">Search Site Name</string>
+    <string name="othersite_dialog_sitenotavail_newsite">If site not available in list then enter new site name</string>
+    <string name="othersite_dialog_clientname">Client name</string>
+
+    <string name="ngentry_pdetail_header">Personal Details</string>
+    <string name="ngentry_refby_hint">Referred by</string>
+    <string name="ngentry_dob">Date Of Birth</string>
+    <string name="ngentry_maritalstatus">Marital Status</string>
+    <string name="ngentry_gender">Gender</string>
+    <string name="ngentry_qualificationdetails">Work/Qualification Details</string>
+    <string name="ngentry_exp_year">Years</string>
+    <string name="ngentry_exp_month">Months</string>
+    <string name="ngentry_edu_qualification_dropdown">Educational Qualification</string>
+    <string name="ngentry_canspeekenglish">Can Speek English Language</string>
+    <string name="ngentry_doctype">Document Type</string>
+    <string name="ngentry_docnumber">Document Number</string>
+    <string name="ngentry_capt_idphoto">Capture ID Photo</string>
+    <string name="ngentry_docsummary">Attached Documents As Follows</string>
+    <string name="ngentry_previous_button">Previous</string>
+    <string name="ngentry_next_button">Next</string>
+
+</resources>

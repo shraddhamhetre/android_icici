@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:padding="@dimen/activity_10_margin"
+    android:background="@drawable/rounded_border_trans_solid"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/dialogHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/screen_appbar_color"
+        android:gravity="center"
+        android:padding="@dimen/activity_10_margin"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/text_color"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/listviewDivider" />
+
+    <TextView
+        android:id="@+id/dialog_event_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="7dp"
+        android:drawableEnd="@android:drawable/stat_notify_sync_noanim"
+        android:text="Enter captcha given below." />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/dialog_event_captcha"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:text=""
+            android:gravity="center"
+            android:textSize="@dimen/activity_20_margin"
+            android:textStyle="bold"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/captchaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName|textCapCharacters"
+        android:text="" />
+
+    <Button
+        android:id="@+id/dialog_ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/button_background"
+        android:text="OK" />
+</LinearLayout>

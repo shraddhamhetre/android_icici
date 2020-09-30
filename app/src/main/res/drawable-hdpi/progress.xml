@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+        <shape>
+            <!-- radius background of progressbar -->
+            <corners android:radius="10dip" />
+            <gradient
+                android:startColor="@color/listviewDivider"
+                android:centerColor="#ff5a5d5a"
+                android:centerY="0.75"
+                android:endColor="@color/listviewDivider"
+                android:angle="270"
+                />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+                <gradient
+                    android:startColor="#80ffd300"
+                    android:centerColor="#80ffb600"
+                    android:centerY="0.75"
+                    android:endColor="#a0ffcb00"
+                    android:angle="270"
+                    />
+            </shape>
+        </clip>
+    </item>
+    <item
+        android:id="@android:id/progress"
+        >
+        <clip>
+            <shape>
+                <!-- radius of secundary progress -->
+                <corners
+                    android:radius="10dip" />
+                <gradient
+                    android:startColor="@color/button_background"
+                    android:centerColor="#1e8088"
+                    android:centerY="0.75"
+                    android:endColor="#166066"
+                    android:angle="270" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
+<!--
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@android:id/background"
+        android:dither="true"
+        android:drawable="@drawable/img_seekbar_bg">
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#80127fb1"
+                    android:centerY="0.75"
+                    android:endColor="#a004638f"
+                    android:startColor="#80028ac8" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <bitmap
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:antialias="true"
+                android:dither="false"
+                android:filter="false"
+                android:gravity="left"
+                android:src="@drawable/img_seekbar_progress_blue"
+                android:tileMode="repeat" />
+        </clip>
+    </item>
+
+</layer-list>-->

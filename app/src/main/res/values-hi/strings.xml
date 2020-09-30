@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="application_modules_array">
+        <item>@string/module_task</item>
+        <item>@string/module_ticket</item>
+        <item>@string/module_asset</item>
+        <item>@string/module_ir</item>
+        <item>@string/module_panic</item>
+        <item>@string/module_chkpoint</item>
+        <item>@string/module_userlocation</item>
+        <item>@string/module_selfattendance</item>
+        <item>@string/module_siteattendance</item>
+        <item>@string/module_takeattendance</item>
+        <item>@string/module_sitetour</item>
+        <item>@string/module_sitevisited</item>
+        <item>@string/module_addconveyance</item>
+        <item>@string/module_ppm</item>
+        <item>@string/module_empreference</item>
+        <item>@string/module_workflow</item>
+        <item>@string/module_assetaudit</item>
+        <item>@string/module_request</item>
+        <item>@string/module_aoattendance</item>
+        <item>@string/module_bmattendance</item>
+        <!--<item>@string/module_sitevisitplan</item>-->
+    </string-array>
+
+    <!--<item>@string/module_aoattendance</item>
+    <item>@string/module_bmattendance</item>-->
+
+    <string name="module_task">"टास्क"</string>
+    <string name="module_ticket">"सहायता केंद्र"</string>
+    <string name="module_asset">एसेट</string>
+    <string name="module_ir">"घटना की रिपोर्ट"</string>
+    <string name="module_chkpoint">चेक प्वाइंट</string>
+    <string name="module_sitetour">स्थल भ्रमण</string>
+    <string name="module_userlocation">उपयोगकर्ता स्थान</string>
+    <string name="module_addconveyance">वाहन भत्ता</string>
+    <string name="module_selfattendance">सेल्फ अटेंडेन्स </string>
+    <string name="module_siteattendance">साइट अटेंडेन्स</string>
+    <string name="module_takeattendance">अटेंडेन्स लें</string>
+    <string name="module_aoattendance">क्षेत्र अधिकारी</string>
+    <string name="module_bmattendance">शाखा प्रबंधक</string>
+    <string name="module_sitevisited">साइट का दौरा किया</string>
+    <string name="module_ppm">पीपीएम</string>
+    <string name="module_empreference">एम्प्लॉई संदर्भ</string>
+    <string name="module_panic">"मुसीबत में मदत माँगे"</string>
+    <string name="module_workflow">कार्यप्रवाह</string>
+    <string name="module_assetaudit">एसेट ऑडिट</string>
+    <!--<string name="module_sitevisitplan">साइट पर जाने की योजना</string>-->
+
+    <string name="title_activity_dashboard">डैशबोर्ड</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="navigation_drawer_setting">सेटिंग</string>
+    <string name="navigation_drawer_help">पासवर्ड बदलें</string>
+    <string name="navigation_drawer_logout">लॉग आउट</string>
+    <string name="navigation_drawer_aboutus">हमारे बारे में</string>
+    <string name="navigation_drawer_privacypolicy">गोपनीयता नीति</string>
+    <string name="navigation_drawer_geofence">जियो फेंस</string>
+
+
+    <string name="dashboard_backbutton_msg">एप्लिकेशन से बाहर निकलने के लिए फिर से दबाएं।</string>
+    <string name="dashboard_entrynotsync_msg">लॉगआउट से पहले प्रविष्टि सिंक नहीं की गई \ n कृपया समन्वयन करें।</string>
+    <string name="dashboard_entriesnotsync_msg">एंट्री नहीं सिंक किए गए \ n कृपया लॉगआउट से पहले सिंक करें।</string>
+    <string name="dashboard_doyouwantlogoutmsg">क्या आप लॉगआउट करना चाहते हैं?</string>
+
+    <!--Common-->
+    <string name="alerttitle">चेतावनी</string>
+    <string name="check_internet_connection_msg">कृपया इंटरनेट कनेक्शन की जाँच करें !!</string>
+    <string name="autodatetimeMessage">कृपया जारी रखने के लिए स्वचालित दिनांक और समय सेटिंग सक्षम करें।</string>
+    <string name="autoGPSMessage">कृपया जारी रखने के लिए GPS सक्षम करें।</string>
+    <string name="offlinemode_alert_message">यह क्रिया केवल इंटरनेट से कनेक्ट होने पर की जा सकती है। अपने इंटरनेट कनेक्शन की जाँच करें और पुन: प्रयास करें।</string>
+    <string name="no_internet_connection">कोई इंटरनेट कनेक्शन नहीं!</string>
+    <string name="internet_connection_available">ऑनलाइन वापस</string>
+    <string name="please_wait">कृपया प्रतीक्षा करें..</string>
+    <string name="data_not_found">डेटा उपलब्ध नहीं</string>
+    <string name="questionset_not_available">प्रश्न सेट उपलब्ध नहीं है</string>
+
+    <string name="button_cancel">रद्द करना</string>
+    <string name="button_yes">हाँ</string>
+    <string name="button_no">नहीं</string>
+    <string name="button_done">किया हुआ</string>
+    <string name="button_add">जोड़ना</string>
+    <string name="button_start">शुरु</string>
+    <string name="button_stop">रुकें</string>
+    <string name="button_save">बचत करना</string>
+    <string name="button_submit">जमा करें</string>
+    <string name="button_ok">ठीक</string>
+    <string name="button_close">बंद करे</string>
+    <string name="button_next">आगामी</string>
+    <string name="button_checkout">चेक आउट</string>
+    <string name="button_details">More Details</string>
+
+
+    <!--Sync view Activity-->
+    <string name="sync_dialog_syncinprogress">सिंक्रनाइज़ेशन प्रगति में है ..</string>
+    <string name="sync_dialog_failed_msg">सिंक्रनाइज़ेशन विफल!</string>
+    <string name="server_data_sync">कृपया सिंक्रनाइज़ेशन पूर्ण होने तक प्रतीक्षा करें।</string>
+    <string name="sync_dialog_title">सिंक्रोनाइजेशन</string>
+    <string name="sync_dialog_success_msg">सिंक्रनाइज़ेशन सफल!</string>
+    <string name="sync_dialog_upload_msg">डेटा अपलोड कर रहा है ..</string>
+    <string name="sync_dialog_datauploaded">डेटा अपलोड किया गया।</string>
+    <string name="sync_dialog_download_msg">डेटा डाउनलोड कर रहा है ..</string>
+    <string name="sync_dialog_datadownloaded">डेटा डाउनलोड किया गया।</string>
+
+    <!--Job List-->
+    <string name="joblist_pending_title">बचा हुआ</string>
+    <string name="joblist_completed_title">पूरा कर लिया है</string>
+    <string name="joblist_all_title">सब</string>
+    <string name="jobinfo_dialog_title">अनुसूची %1$s सारांश</string>
+    <string name="select_quest_set_title1"></string>
+    <string name="select_quest_set_title2"> </string>
+    <string name="joblist_assetcodenotfound">एसेट कोड नहीं मिला</string>
+    <string name="joblist_selecturchoice_title">अपनी पसंद का चयन करें</string>
+    <string name="joblist_enterassetcode">एस्से कोड दर्ज करें</string>
+    <string name="joblist_nfcnotsupported">इस उपकरण के लिए NFC समर्थित नहीं है</string>
+
+    <string name="job_alert_msg_yourtaskis">आपका कार्य है </string>
+    <string name="job_alert_msg_dueattime">समय के कारण </string>
+    <string name="job_has_expired">नौकरी समाप्त हो गई है।</string>
+    <string name="job_is_future">%1$s से पहले प्रदर्शन नहीं कर सकते। </string>
+    <string name="job_has_completed">नौकरी पूरी हो चुकी है।</string>
+    <string name="job_has_closed">नौकरी बंद हो गई है।</string>
+    <string name="job_quest_not_assigned">सवाल नहीं सौंपा !!</string>
+
+    <string name="joblist_startjob_title">क्या आपको शुरू करना है</string>
+    <string name="joblist_assetcodemismatched">Asset code mismatched</string>
+
+    <string name="joblist_schedulecount_title">शिड्यूल काउंट</string>
+    <string name="joblist_pendingcount_title">लंबित काउंट</string>
+    <string name="joblist_completecount_title">पूर्ण काउंट</string>
+    <string name="joblist_autoclosedcount_title">ऑटो बंद गिनती</string>
+
+    <string name="job_alert_msg_title">JOB due alert</string>
+    <string name="gf_alert_msg_title">Geofence Breached</string>
+
+    <!--JOB need details view-->
+    <string name="jobneeddetails_id">आईडी</string>
+    <string name="jobneeddetails_jTNo">कार्य संख्या:</string>
+    <string name="jobneeddetails_jDesc">विवरण:</string>
+    <string name="jobneeddetails_jPDate">नियोजित दिनांक:</string>
+    <string name="jobneeddetails_jEDate">समाप्ति दिनांक:</string>
+    <string name="jobneeddetails_jGTime">अनुकम्पा अवधि:</string>
+    <string name="jobneeddetails_jCat">टिकट श्रेणी:</string>
+    <string name="jobneeddetails_jFreq">फ्रीक्वेंसी:</string>
+    <string name="jobneeddetails_jType">प्रकार:</string>
+    <string name="jobneeddetails_jStatus">स्थिति:</string>
+    <string name="jobneeddetails_jPriority">प्राथमिकता:</string>
+    <string name="jobneeddetails_jAssignedBy">द्वारा नियुक्त:</string>
+    <string name="jobneeddetails_jAssignedTo">को नियुक्त:</string>
+    <string name="jobneeddetails_jAttCount">प्रमाण काउंट:</string>
+    <string name="jobneeddetails_jReply">रिप्लाई</string>
+    <string name="jobneeddetails_jHistory">इतिहास</string>
+    <string name="jobneeddetails_jReading">प्रदर्शन</string>
+    <string name="jobneeddetails_jDetails">विवरण</string>
+    <string name="jobneeddetails_jselectjobstatus">काम की स्थिति का चयन करें</string>
+    <string name="jobneeddetails_jRemark">टिप्पणी</string>
+    <string name="jobneeddetails_jPeople">पीपल</string>
+    <string name="jobneeddetails_jGroup">समूह</string>
+    <string name="jobneeddetails_jShowHistory">इतिहास दिखाओ</string>
+    <string name="jobneeddetails_jattchment">प्रमाण</string>
+
+    <!-- adhoc job need-->
+    <string name="title_activity_adhoc_job">临时工作</string>
+    <string name="adhoc_succeed">临时工作成功创建</string>
+    <string name="adhoc_failed">अनौपचारिक कार्य बनाने में विफल।</string>
+    <string name="adhoc_fill_req_info">कृपया आवश्यक जानकारी भरें!</string>
+    <string name="adhoc_questionset_error">कृपया प्रश्न सेट का चयन करें।</string>
+    <string name="adhoc_questionname_title">सवाल का नाम</string>
+
+    <string name="adhoc_search">सर्च</string>
+    <string name="adhoc_info">जानकारी</string>
+    <string name="action_schedule">时间表</string>
+    <string name="action_adhoc">特别指定</string>
+
+    <string name="adhoc_desc">विवरण：</string>
+    <string name="adhoc_tNo">कार्य संख्या:</string>
+    <string name="adhoc_tcat">टिकट श्रेणी:</string>
+    <string name="adhoc_smartplace">एसेट / स्मार्ट जगह:</string>
+    <string name="adhoc_qset">प्रश्न सेट:</string>
+    <string name="adhoc_priority">प्राथमिकता:</string>
+    <string name="adhoc_assignto">को नियुक्त:</string>
+    <string name="adhoc_people">पीपल</string>
+    <string name="adhoc_group">समूह</string>
+    <string name="adhoc_self">स्वयं</string>
+    <string name="adhoc_remark">टिप्पणी：</string>
+    <string name="adhoc_attchcount">प्रमाण</string>
+    <string name="adhoc_perform">प्रदर्शन</string>
+    <string name="count_zero">00</string>
+
+    <!--Incident report Question Activity-->
+    <string name="fill_mandetory_error_msg">请填写所有字段中的数据，然后尝试保存</string>
+    <string name="fill_mandetoryfield_error_msg">请填写强制性问题!!</string>
+    <string name="fill_value_in_properrange_msg">请在给定范围内输入值</string>
+    <string name="fill_value_emailid_msg">请提供正确的电子邮件ID</string>
+    <string name="fill_value_selectdate_title">选择日期</string>
+    <string name="fill_value_selecttime_title">选择时间</string>
+    <string name="fill_value_multipleoption_title">多选项选择</string>
+
+    <string name="ir_template_not_found">हादसा रिपोर्ट टेम्पलेट नहीं मिला!</string>
+
+    <!--User Location-->
+    <string name="userlocation_notfound_error">अंतिम ज्ञात स्थान नहीं मिला</string>
+
+    <!--Help Desk List-->
+    <string name="action_date">日期</string>
+    <string name="action_priority">优先序</string>
+
+
+    <!--Help Desk Details-->
+    <string name="helpdesk_title_item_detail">टिकट विस्तार</string>
+    <string name="ticket_id">आईडी</string>
+    <string name="ticket_jTNo">टिकट संख्या:</string>
+    <string name="ticket_jTCreatedon">को निर्मित:</string>
+    <string name="ticket_jDesc">विवरण:</string>
+    <string name="ticket_jAsset">एसेट：</string>
+    <string name="ticket_jQset">प्रश्न सेट:</string>
+    <string name="ticket_jAssignedBy">द्वारा नियुक्त:</string>
+    <string name="ticket_jAssignedTo">को नियुक्त:</string>
+    <string name="ticket_jCat">टिकट श्रेणी:</string>
+    <string name="ticket_jAttCount">प्रमाण काउंट:</string>
+    <string name="ticket_jReadingDetails">विवरण पढ़ना</string>
+    <string name="ticket_jAttDetails">प्रमाण ब्योरा</string>
+    <string name="ticket_jStatus">स्थिति:</string>
+    <string name="ticket_jPerformby">द्वारा प्रदर्शित:</string>
+    <string name="ticket_jassetlocation">स्थान:</string>
+    <string name="ticket_jAction">कार्य</string>
+    <string name="ticket_jHistory">इतिहास</string>
+    <string name="ticket_jSelectaction">कार्रवाई चुनें</string>
+    <string name="ticket_jRemark">टिप्पणी</string>
+    <string name="ticket_jAttachment">प्रमाण</string>
+
+    <string name="ticket_list_row_ticketno">टिकट संख्या: %1$d</string>
+
+    <!-- adhoc Ticket-->
+    <string name="title_activity_adhoc_ticket">Adhoc Ticket</string>
+    <string name="adhoc_ticket_desc">विवरण:</string>
+    <string name="adhoc_ticket_tcat">टिकट श्रेणी:</string>
+    <string name="adhoc_ticket_priority">प्राथमिकता:</string>
+    <string name="adhoc_ticket_location">स्थान:</string>
+    <string name="adhoc_ticket_assignto">को नियुक्त:</string>
+    <string name="adhoc_ticket_people">पीपल</string>
+    <string name="adhoc_ticket_group">समूह</string>
+    <string name="adhoc_ticket_remark">टिप्पणी：</string>
+    <string name="adhoc_ticket_attchcount">प्रमाण</string>
+
+    <string name="adhoc_ticket_succeed">ADHOC टिकट सफलतापूर्वक बनाया गया।</string>
+
+    <string name="ticket_custom_open_reply">रिप्लाई</string>
+    <string name="ticket_custom_cancelled">रद्द करें</string>
+    <string name="ticket_custom_complete">पूरा</string>
+    <string name="ticket_custom_new">नया</string>
+    <string name="ticket_custom_escalated">आगे बढ़ाए</string>
+
+    <string name="ticket_error_msg_remark">कृपया टिप्पणी दर्ज करें!</string>
+    <string name="ticket_start_alert_msg">क्या आप इस टिकट को शुरू करना चाहते हैं</string>
+
+    <!--Asset Listview-->
+    <string name="title_asset_list">एसेट / स्मार्ट प्लेस</string>
+    <string name="title_asset_detail">एसेट डिटेल</string>
+    <string name="asset_location_view">स्थान: %1$s</string>
+    <string name="assetlistactivity_messge1">पहले से ही एसेट </string>
+
+    <!--Asset Details-->
+    <string name="asset_code">कोड:</string>
+    <string name="asset_name">नाम:</string>
+    <string name="asset_enable">सक्षम करें:</string>
+    <string name="asset_iscritical">नाजुक है:</string>
+    <string name="asset_identifier">पहचानकर्ता:</string>
+    <string name="asset_runningstatus">Running Status：</string>
+    <string name="asset_location">स्थान:</string>
+    <string name="asset_type">प्रकार:</string>
+    <string name="asset_cat">वर्ग:</string>
+    <string name="asset_subcat">उप श्रेणी:</string>
+    <string name="asset_brand">ब्रांड:</string>
+    <string name="asset_model">मॉडल:</string>
+    <string name="asset_supplier">प्रदायक:</string>
+    <string name="asset_capacity">क्षमता:</string>
+    <string name="asset_unit">यूनिट:</string>
+    <string name="asset_yom">मैन्युफैक्चरिंग वर्ष:</string>
+    <string name="asset_msn">मैन्युफैक्चरिंग क्रमांक संख्या:</string>
+    <string name="asset_bdate">बिल की दिनांक:</string>
+    <string name="asset_pdate">खरीद की दिनांक:</string>
+    <string name="asset_insdate">स्थापना की दिनांक:</string>
+    <string name="asset_billvalue">बिल का मूल्य:</string>
+    <string name="asset_service">सर्विस:</string>
+    <string name="asset_serprov">सेवा प्रदाता:</string>
+    <string name="asset_sfdate">सेवा दिनांक से:</string>
+    <string name="asset_stdate">आज तक की सेवा:</string>
+    <string name="asset_meter">मीटर संख्या:</string>
+    <string name="asset_address">पता:</string>
+    <string name="asset_landmark">भूमि-चिह्न：</string>
+    <string name="asset_mobile">मोबाइल नंबर:</string>
+    <string name="asset_phone">फ़ोन नंबर:</string>
+    <string name="asset_website">वेबसाइट:</string>
+    <string name="asset_geolocation">भू स्थान:</string>
+    <string name="asset_mfactor">गुणन कारक:</string>
+
+
+    <!--SOS Activity-->
+    <string name="sos_emergency_contact_num_error">कृपया आपातकालीन संपर्क नंबर प्रदान करें!</string>
+    <string name="sos_starting">पैनिक अलर्ट भेजा जाएगा</string>
+    <string name="sos_cancelled">पैनिक अलर्ट रद्द</string>
+    <string name="sos_sent">पैनिक अलर्ट भेजा गया</string>
+    <string name="sos_sending">पैनिक मदद भेजना</string>
+    <string name="sos_help_message">मैं, %1$s %2$s.</string>
+    <string name="sos_my_location">मेरा स्थान： https://maps.google.com/maps?q=%1$s,%2$s</string>
+    <string name="sos_sendingpanic">पैनिक मदद भेज रहा है।</string>
+
+    <!--Tour Activity-->
+    <string name="tour_checklistnotavailable">चेकलिस्ट उपलब्ध नहीं है</string>
+    <string name="tour_parent">Parent</string>
+    <string name="tour_checkpoint_completed">चेक प्वाइंट पूरा हो चुका है</string>
+    <string name="tour_checkpoint_closed">चेक प्वाइंट को बंद कर दिया गया है</string>
+    <string name="tour_incorrect_asset_chkpoint">गलत एसेट चेक प्वाइंट</string>
+
+    <!--Self attendance-->
+    <string name="title_activity_self_attendance">स्वयं की उपस्थिति</string>
+    <string name="self_attendance_in">प्रवेश</string>
+    <string name="self_attendance_out">बाहर जाएं</string>
+
+    <!--Action bar titles-->
+    <string name="action_notvisitedsites">देखा नहीं गया</string>
+
+
+
+    <!--old strings-->
+    <string name="app_name">इंटेलीविज़ 2.0</string>
+    <string name="company_name">Youtility टेक्नोलॉजीज प्राइवेट लिमिटेड</string>
+
+
+    <string name="login_actionbar_title">Sign In</string>
+    <string name="login_credential_error">कृपया उचित प्रत्यय दर्ज करें</string>
+    <string name="login_capability_failed">उपयोगकर्ता लॉगिन सफल। उपयोगकर्ता के पास मोबाइल एक्सेस की अनुमति नहीं है।</string>
+    <string name="login_user_code_error">उपयोगकर्ता कोड दर्ज करें</string>
+    <string name="login_user_password_error">उपयोगकर्ता पासवर्ड दर्ज करें</string>
+    <string name="login_user_sitecode_error">साइट कोड दर्ज करें</string>
+    <string name="login_sitename_hint">साइट कोड</string>
+    <string name="login_username_hint">उपयोगकर्ता नाम</string>
+    <string name="login_userpassword_hint">पारण शब्द</string>
+    <string name="button_login">लॉग इन</string>
+    <string name="application_update_alert_msg">Youtility2.0 का नया संस्करण उपलब्ध है। क्या आप इसे अपडेट करना चाहते हैं?</string>
+
+    <string name="ngentry_firstname_hint">प्रथम नाम</string>
+    <string name="ngentry_middlename_hint">मध्य नाम</string>
+    <string name="ngentry_lastname_hint">अंतिम नाम</string>
+    <string name="ngentry_laddress_hint">स्थानीय पता</string>
+    <string name="ngentry_naddress_hint">मूल निवासी पता</string>
+    <string name="ngentry_areacode_hint">एरिया कोड</string>
+    <string name="ngentry_mobilenumber_hint">मोबाइल नंबर</string>
+    <string name="ngentry_otherqualification_hint">अन्य</string>
+    <string name="ngentry_height_hint">ऊँचाई (सेंटीमीटर में)</string>
+    <string name="ngentry_weight_hint">वजन (किलो में )</string>
+    <string name="ngentry_waist_hint">कमर (सेंटीमीटर में )</string>
+    <string name="ngentry_currentemployment_hint">मौजूदा रोजगार</string>
+    <string name="ngentry_lengthofservice_hint">सेवा की अवधि</string>
+    <string name="ngentry_calculatedAge_hint">आयु : %1$s</string>
+    <string name="ngentry_identificationmark_hint">पहचान चिन्ह</string>
+    <string name="ngentry_religion_hint">धर्म</string>
+    <string name="ngentry_cast_hint">जाति</string>
+    <string name="ngentry_physicalcondition_hint">शारीरिक स्थिति</string>
+    <string name="ngentry_handicapped_hint">विकलांग</string>
+
+    <string name="ngentry_lcity_hint">स्थानीय शहर</string>
+    <string name="ngentry_lstate_hint">स्थानीय राज्य</string>
+    <string name="ngentry_ncity_hint">मूल शहर</string>
+    <string name="ngentry_nstate_hint">मूल राज्य</string>
+    <string name="ngentry_nareacode_hint">एरिया कोड</string>
+    <string name="ngentry_seletdate">तारीख़ चुनें</string>
+
+    <string name="ngentry_error_referedname">संदर्भित नाम दर्ज करें</string>
+    <string name="ngentry_error_fname">प्रथम नाम डालो</string>
+    <string name="ngentry_error_lname">अंतिम नाम दर्ज करो</string>
+    <string name="ngentry_error_mobilenumber">मोबाइल नंबर दर्ज करें</string>
+    <string name="ngentry_error_dob">जन्म दिनांक आवश्यक है।</string>
+    <string name="ngentry_error_religion">कृपया धर्म दर्ज करें</string>
+    <string name="ngentry_error_cast">कृपया जाति दर्ज करें</string>
+    <string name="ngentry_error_idmark">पहचान चिह्न दर्ज करें</string>
+    <string name="ngentry_error_height">ऊँचाई सेंटीमीटर में दर्ज करें</string>
+    <string name="ngentry_error_weight">वजन किलो में दर्ज करें</string>
+    <string name="ngentry_error_waist">कमर सेंटीमीटर में दर्ज करें</string>
+    <string name="ngentry_error_phycondition">कृपया शारीरिक स्थिति दर्ज करें</string>
+
+    <string name="ngentry_added_successfully_msg">कर्मचारी संदर्भ सफलतापूर्वक जोड़ा गया</string>
+
+    <string name="guardtour">Guard Tour</string>
+    <string name="siteaudit">Site Audit</string>
+    <string name="intelliwiz">Intelliwiz</string>
+    <string name="attendance">Attendance</string>
+    <string name="inventory">Inventory</string>
+    <string name="ereg">e-Register</string>
+
+    <string-array name="appName_array">
+        <item>@string/guardtour</item>
+        <item>@string/siteaudit</item>
+        <item>@string/intelliwiz</item>
+        <item>@string/attendance</item>
+        <item>@string/inventory</item>
+        <item>@string/ereg</item>
+    </string-array>
+
+
+    <string-array name="application_modules_code_array">
+        <item>@string/module_task_code</item>
+        <item>@string/module_ticket_code</item>
+        <item>@string/module_asset_code</item>
+        <item>@string/module_ir_code</item>
+        <item>@string/module_panic_code</item>
+        <item>@string/module_chkpoint_code</item>
+        <item>@string/module_userlocation_code</item>
+        <item>@string/module_selfattendance_code</item>
+        <item>@string/module_siteattendance_code</item>
+        <item>@string/module_takeattendance_code</item>
+        <item>@string/module_sitetour_code</item>
+        <item>@string/module_sitevisited_code</item>
+        <item>@string/module_addconveyance_code</item>
+        <item>@string/module_ppm_code</item>
+        <item>@string/module_empreference_code</item>
+        <item>@string/module_workflow_code</item>
+        <item>@string/module_assetaudit_code</item>
+        <item>@string/module_request_code</item>
+        <item>@string/module_aoattendance_code</item>
+        <item>@string/module_bmattendance_code</item>
+    </string-array>
+
+    <!--<item>@string/module_aoattendance_code</item>
+    <item>@string/module_bmattendance_code</item>-->
+
+    <string-array name="application_modules_desc_array">
+        <item>Easy to see schedule and created task.</item>
+        <item>Easy to see schedule and created ticket.</item>
+        <item>Record maintenance of each asset</item>
+        <item>Real-time and structured incident reports with  audio, photo and video.</item>
+        <item>Send an alert in emergency.</item>
+        <item>Guard tours are scheduled and assigned to the user individually or based on group the user belongs to</item>
+        <item>Keep track of surveyors or auditors geographical location in real-­time</item>
+        <item>Real-time attendance </item>
+        <item>Real-time attendance </item>
+        <item>Real-time attendance </item>
+        <item>Easy creation and management of large number of sites and  workforce records.</item>
+        <item>Show the visited sites.</item>
+        <item>Keep tack of conveyance.</item>
+        <item>Leaderboard</item>
+        <item>Employee Reference</item>
+        <item>Work Flow</item>
+        <item>Asset Audit</item>
+        <item>Request</item>
+        <item>Area Officer</item>
+        <item>Branch Manager</item>
+    </string-array>
+
+    <!--<item>Area Officer</item>
+    <item>Branch Manager</item>-->
+
+
+    <string name="module_task_code">TASK</string>
+    <string name="module_ticket_code">TICKET</string>
+    <string name="module_asset_code">ASSET</string>
+    <string name="module_ir_code">INCIDENTREPORT</string>
+    <string name="module_chkpoint_code">CHECKPOINT</string>
+    <string name="module_sitetour_code">SITETOUR</string>
+    <string name="module_userlocation_code">USERLOCATION</string>
+    <string name="module_addconveyance_code">CONVEYANCE</string>
+    <string name="module_selfattendance_code">SELFATTENDANCE</string>
+    <string name="module_siteattendance_code">SITEATTENDANCE</string>
+    <string name="module_takeattendance_code">TAKEATTENDANCE</string>
+    <string name="module_panic_code">PANIC</string>
+    <string name="module_sitevisited_code">SITEVISITLOG</string>
+    <string name="module_ppm_code">PPMPLANNER</string>
+    <string name="module_aoattendance_code">AREAOFFICER</string>
+    <string name="module_bmattendance_code">BRANCHMANAGER</string>
+    <string name="module_empreference_code">EMPLOYEEREFERENCE</string>
+    <string name="module_workflow_code">WORKFLOW</string>
+    <string name="module_assetaudit_code">ASSETAUDIT</string>
+
+
+    <string name="action_done">किया हुआ</string>
+    <string name="action_upload">अपलोड</string>
+    <string name="action_refresh">रिफ्रेश</string>
+    <string name="action_visitedsites">का दौरा किया</string>
+
+    <string name="action_all">आल</string>
+
+    <string name="action_call">कॉल</string>
+
+
+    <string name="action_settings">सेटिंग्स</string>
+    <string name="title_activity_setting">सेटिंग्स</string>
+    <string name="action_siteinfo">साइट जानकारी</string>
+
+
+    <string name="action_asc">A-Z</string>
+    <string name="action_desc">Z-A</string>
+    <string name="search_hint">सर्च</string>
+
+
+    <string name="action_audio">ऑडियो</string>
+    <string name="action_video">वीडियो</string>
+    <string name="action_picture">चित्र</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">सामान्य</string>
+
+    <string name="pref_title_lang_type">भाषा</string>
+    <string-array name="pref_lang_type_titles">
+        <item>English</item>
+        <item>हिंदी</item>
+        <item>简体中文</item>
+        <item>中國傳統的</item>
+    </string-array>
+    <string-array name="pref_lang_type_values">
+        <item>en</item>
+        <item>hi</item>
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+    </string-array>
+
+    <string name="pref_title_video_rec">वीडियो रिकॉर्डिंग की लंबाई</string>
+    <string-array name="pref_video_length_titles">
+        <item>दस पल</item>
+        <item>20 सेकंड</item>
+        <item>30 सेकंड</item>
+        <item>40 सेकंड</item>
+        <item>50 सेकंड</item>
+        <item>60 सेकंड</item>
+    </string-array>
+    <string-array name="pref_video_length_values">
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+        <item>40000</item>
+        <item>50000</item>
+        <item>60000</item>
+    </string-array>
+
+    <!--<string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>-->
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">डेटा और सिंक</string>
+
+    <string name="pref_title_sync_frequency">सिंक आवृत्ति</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>5 मिनट</item>
+        <item>10 मिनटों</item>
+        <item>15 मिनट</item>
+        <item>30 मिनिट</item>
+        <item>1 घंटा</item>
+        <item>3 घंटे</item>
+        <item>6 घंटे</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+    </string-array>
+
+    <string name="pref_title_location_tracking_frequency">स्थान ट्रैकिंग आवृत्ति</string>
+    <string-array name="pref_location_tracking_titles">
+        <item>1 मिनट</item>
+        <item>5 मिनट</item>
+        <item>10 मिनटों</item>
+        <item>15 मिनट</item>
+        <item>30 मिनिट</item>
+    </string-array>
+    <string-array name="pref_location_tracking_values">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+
+    <string name="pref_title_activity_recognition_frequency">गतिविधि मान्यता आवृत्ति</string>
+    <string-array name="pref_activity_recognition_titles">
+        <item>5 मिनट</item>
+        <item>10 मिनटों</item>
+        <item>15 मिनट</item>
+        <item>20 मिनिट</item>
+        <item>30 मिनिट</item>
+    </string-array>
+    <string-array name="pref_activity_recognition_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">सूचनाएं</string>
+
+    <string name="pref_title_alert_type">अलर्ट प्रकार</string>
+    <string-array name="pref_alert_type_titles">
+        <item>ध्वनि + कंपन</item>
+        <item>केवल ध्वनि</item>
+        <item>केवल कंपन</item>
+    </string-array>
+    <string-array name="pref_alert_type_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_origin_point_title">मूल बिंदु दर्ज करें</string>
+    <string name="pref_captcha_title">बजर प्रकार</string>
+    <string-array name="pref_captcha_type_titles">
+        <item>कैप्चा</item>
+        <item>एनएफसी</item>
+        <item>क्यूआर</item>
+    </string-array>
+    <string-array name="pref_captcha_type_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="title_activity_about_us">हमारे बारे में</string>
+    <!--<string name="dummy_button">Contact Us</string>-->
+    <string name="job_title_item_list">टास्क सूची / कार्य सूची</string>
+    <string name="job_title_item_detail">टास्क विस्तार</string>
+
+    <string name="title_activity_incident_report">Incident Report</string>
+    <string name="title_activity_record_audio">Record Audio</string>
+    <string name="title_activity_incident_report_question">Incident Report Questionnaire</string>
+    <!--<string name="ir_comments">Comment</string>-->
+    <string name="title_activity_attendance_capture_photo">Capture Photo</string>
+
+
+
+    <string name="selfie_attendance_alert_title">अटेंडेंस</string>
+    <string name="selfie_attendance_alert_message">पंजीकृत !! \ n धन्यवाद</string>
+    <string name="title_activity_attendance_take">अटेंडेंस लें</string>
+
+    <!--<string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>-->
+
+    <!--  zxing string -->
+    <string name="button_custom_product_search">Custom search</string>
+    <string name="button_share_by_email">Share via email</string>
+    <string name="button_share_by_sms">Share via SMS</string>
+    <string name="button_web_search">Web search</string>
+    <string name="contents_contact">Contact info</string>
+    <string name="contents_email">Email address</string>
+    <string name="contents_location">Geographic coordinates</string>
+    <string name="contents_phone">Phone number</string>
+    <string name="contents_sms">SMS address</string>
+    <string name="contents_text">Plain text</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem.
+		You may need to restart the device.</string>
+    <string name="msg_default_meta">Metadata</string>
+    <string name="msg_default_mms_subject">Hi</string>
+    <string name="msg_default_status">Place a barcode inside the viewfinder rectangle to
+		scan it.</string>
+    <string name="msg_google_shopper_missing">Google Shopper is not installed</string>
+    <string name="msg_install_google_shopper">Google Shopper combines barcode scanning with
+		online and local prices, reviews and more without opening the browser.
+		Would you like to try it?</string>
+    <string name="msg_intent_failed">Sorry, the requested application could not be
+		launched. The barcode contents may be invalid.</string>
+    <string name="msg_share_subject_line">Here are the contents of a barcode I scanned</string>
+    <string name="result_text">Found plain text</string>
+
+    <string name="leaveSharePref">LeaveSharePref</string>
+    <string name="title_activity_attendance_mark">अटेंडेंस बनाएं</string>
+    <string name="title_activity_capture_photo">फोटो कैप्चर करें</string>
+    <string name="title_activity_video_capture">वीडियो बनाओ</string>
+    <string name="title_activity_settings">सेटिंग्स</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">उपयोगकर्ता नाम में लॉग इन करें</string>
+    <string name="pref_title_site_name">उपयोगकर्ता डिफ़ॉल्ट साइट में लॉग इन करें</string>
+    <string name="pref_title_device_imei">डिवाइस IMEI</string>
+    <string name="pref_title_contact_number">आपातकालीन संपर्क नंबर</string>
+    <string name="pref_title_contact_email">आपातकालीन संपर्क ईमेल आईडी</string>
+    <string name="pref_title_contact_msg">आपातकालीन मदद संदेश</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">सिस्टम सिंक सेटिंग्स</string>
+
+    <string name="pref_title_new_message_notifications">नई संदेश सूचनाएं</string>
+
+    <string name="pref_title_ringtone">रिंगटोन</string>
+    <string name="pref_ringtone_silent">साइलेंट</string>
+    <string name="pref_title_vibrate">वैब्रट</string>
+    <string name="title_activity_photo_annotation">फोटो एनोटेशन</string>
+
+    <!--Asset string-->
+    <string name="assetlistactivity_status_color_working">WORKING</string>
+    <string name="assetlistactivity_status_color_standby">STANDBY</string>
+    <string name="assetlistactivity_status_color_maintenance">MAINTENANCE</string>
+    <string name="assetlistactivity_status_changed">अवस्था बदलो</string>
+
+    <string name="button_update">अद्यतन करें</string>
+    <string name="button_notnow">अभी नहीं</string>
+
+    <string name="phoneevent_gpson">जीपीएस चालू हो गया</string>
+    <string name="phoneevent_gpsoff">जीपीएस स्विच ऑफ हो गया</string>
+    <string name="phoneevent_phoneoff">फोन स्विच ऑफ हो गया</string>
+    <string name="phoneevent_phoneon">फ़ोन स्विच ऑन किया गया</string>
+    <string name="phoneevent_airplaneoff">एयरप्लेन मोड बंद हो गया</string>
+    <string name="phoneevent_airplaneon">एयरप्लेन मोड स्विच ऑन किया गया</string>
+    <string name="phoneevent_batterylow">कम बैटरी</string>
+    <string name="phoneevent_mobiledatadisable">मोबाइल डेटा अक्षम</string>
+    <string name="phoneevent_mobiledataenable">मोबाइल डेटा सक्षम किया गया</string>
+    <string name="phoneevent_wifidisable">वाई-फाई अक्षम</string>
+    <string name="phoneevent_wifienable">वाई-फाई चालू</string>
+
+    <string name="geofence_entered"> %1$s जियोफेंस में प्रवेश किया है।</string>
+    <string name="geofence_breached"> %1$s जियोफेंस का उल्लंघन किया है।</string>
+
+
+
+    <string name="title_activity_checkpoint_list">चेक प्वाइंट सूची</string>
+
+    <string name="select_quest_set_title">सर्वेक्षण प्रपत्र का चयन करें</string>
+
+    <!--UPDATE asset SET mdtz=now(), muser="+loginPref.getLong(Constants.LOGIN_PEOPLE_ID,-1)+" runningstatus='"+runningStatus+"' WHERE  assetcode= '"+assetCode+"' returning assetcode-->
+    <string name="asset_update">UPDATE asset SET mdtz=now(), muser= %1$d ,runningstatus=\'%2$d\' where assetcode= \'%3$s\' returning *</string>
+    <string name="jobneeddetail_update">UPDATE jobneeddetails SET answer =\'%1$s\' where jndid = %2$d returning *</string>
+    <string name="jobneedhistory_query">select * from getjobneedhistory(%1$d) where attachmenttype = %2$s</string>
+    <string name="jobneedattachment_query">select * from getjobneedattachments(%1$d)</string>
+    <!--<string name="getSites">select * from sitepeople where peopleid=%1$d and now() between fromdt and uptodt</string>-->
+    <string name="getSites">select sp.*, b.buid, b.bucode, b.buname from sitepeople sp INNER JOIN bu b on b.buid=sp.buid where peopleid=%1$d and now() between fromdt and uptodt</string>
+    <!--select sp.*, b.buid, b.bucode, b.buname from sitepeople sp INNER JOIN bu b on b.buid=sp.buid where peopleid=5017475717563657 and now() between fromdt and uptodt-->
+    <!--<string name="downloadImageFromWeb">http://192.168.1.254:8000/download?filename=%1$s&amp;filepath=%2$s&amp;type=image/png&amp;</string>-->
+
+    <!--About us String-->
+    <string name="aboutus_dbversion">DB संस्करण: %1$d</string>
+    <string name="aboutus_osversion">Android OS संस्करण:%1$s</string>
+    <string name="aboutus_appversion">ऐप संस्करण: %1$s</string>
+    <string name="aboutus_support">समर्थन:</string>
+    <string name="aboutus_supportmsg">किसी भी जांच या प्रतिक्रिया को प्राप्त करने के लिए हमारी हेल्पलाइन हमेशा खुली रहती है। कृपया हमें फ़ॉर्म से एक ईमेल छोड़ने के लिए स्वतंत्र महसूस करें और जैसे ही हम कर सकते हैं हम आपको वापस कर देंगे।</string>
+    <string name="aboutus_supportemail">support@youtility.in</string>
+    <string name="aboutus_visitus">हमसे मिलें:</string>
+    <string name="aboutus_visitusurl">http://www.youtility.in</string>
+    <string name="aboutus_contactus">हमसे संपर्क करें</string>
+    <string name="aboutus_feedbackform_title">संपर्क में रहे</string>
+    <string name="aboutus_feedbackform_yourname_hint">आपका नाम</string>
+    <string name="aboutus_feedbackform_youremail_hint">आपका ईमेल</string>
+    <string name="aboutus_feedbackform_yourcontact_hint">आपका पता</string>
+    <string name="aboutus_feedbackform_yourcomment_hint">यहाँ टिप्पणी लिखें ..</string>
+
+    <string name="othersite_sitename_hint">साइट का नाम</string>
+    <string name="othersite_sitecode_hint">साइट कोड</string>
+
+
+
+    <!--Application Assess view-->
+    <string name="applist_actionbar_title">Applications</string>
+
+    <!--Attendance-->
+    <string name="attendance_empcode">Employee code: %1$s</string>
+    <string name="attendance_nfc_error">This device does not support NFC.</string>
+
+    <!--Client code activity-->
+    <string name="permission_not_granted">अनुमति नहीं दी गई, कृपया सभी अनुमतियां प्रदान करें</string>
+    <string name="entersitecode_error">साइट कोड दर्ज करें</string>
+
+    <!--Dashboard-->
+    <!--<string name="dashboard_nav_bar_header_title">%1$s >> %2$s</string>-->
+    <string name="dashboard_nav_bar_header_title">%1$s</string>
+    <string name="sync_dialog_cancel_msg">Cancelling..</string>
+
+    <string name="sync_dialog_uploading">Uploading........</string>
+    <string name="sync_dialog_downloading">Downloading.......</string>
+    <string name="sync_dialog_updating">Updating.......</string>
+    <string name="sync_dialog_finalizing">finalizing.......</string>
+
+    <string name="dashboard_noaccess">प्रवेश नही</string>
+    <string name="dashboard_noaccess_msg">इस मॉड्यूल को एक्सेस की आवश्यकता है।</string>
+    <string name="dashboard_sync_fb">सिंक</string>
+
+    <string name="sync_assetmaster_failed">एसेट मास्टर डाउनलोडिंग विफल</string>
+    <string name="sync_jobNeedmaster_failed">टास्क मास्टर डाउनलोडिंग विफल</string>
+    <string name="sync_jobNeedDetailsmaster_failed">टास्क डिटेल मास्टर डाउनलोडिंग विफल</string>
+    <string name="sync_typeassistmaster_failed">टाइप सहायता मास्टर डाउनलोडिंग विफल</string>
+    <string name="sync_geofenceDetailsmaster_failed">जियोफ़ेंस डिटेल मास्टर डाउनलोडिंग विफल रही</string>
+    <string name="sync_peoplemaster_failed">लोग डिटेल मास्टर डाउनलोडिंग विफल रही</string>
+    <string name="sync_groupemaster_failed">ग्रुप मास्टर डाउनलोडिंग विफल</string>
+    <string name="sync_attendancehisotymaster_failed">उपस्थिति इतिहास मास्टर डाउनलोडिंग विफल रही</string>
+    <string name="sync_questionmaster_failed">प्रश्न मास्टर डाउनलोडिंग विफल</string>
+    <string name="sync_questionsetmaster_failed">प्रश्न सेट मास्टर डाउनलोडिंग विफल</string>
+    <string name="sync_questionsetbelongingmaster_failed">प्रश्न सेट संबंधित मास्टर डाउनलोडिंग विफल रही</string>
+    <string name="sync_peoplegroupbelongingmaster_failed">मास्टर डाउनलोडिंग से संबंधित लोग समूह विफल रहे</string>
+    <string name="sync_sitesmaster_failed">डाउनलोड करने वाली साइटें विफल रहीं</string>
+
+    <string name="sync_uploadPeopleEventLog_failed">लोग ईवेंट लॉग अपलोड करना विफल रहा</string>
+    <string name="sync_uploadDeviceEventLog_failed">डिवाइस ईवेंट लॉग अपलोड विफल रहा</string>
+    <string name="sync_uploadJobNeedLog_failed">JOB need log uploading failed</string>
+    <string name="sync_uploadJobNeedReplyLog_failed">JOB need reply log uploading failed</string>
+    <string name="sync_uploadJobNeedInsertLog_failed">JOB need log uploading failed</string>
+
+    <string name="sync_dialog_update_msg">डेटा अपडेट कर रहा है ..</string>
+    <string name="sync_dialog_finalize_msg">डेटा को अंतिम रूप दे रहा है ..</string>
+    <string name="sync_dataupdating_failed">डेटा उप्डेटिंग विफल रहा।</string>
+
+    <string name="adhoc_default_description">ADHOC टास्क %1$s</string>
+    <string name="adhoc_default_remark">ADHOC Task Remark</string>
+
+    <!-- Attendance sheet -->
+    <string name="switch_absent">अनुपस्थित</string>
+    <string name="switch_present">उपस्थित</string>
+    <string name="switch_approve">मंजूर</string>
+    <string name="switch_reject">अस्वीकार</string>
+    <string name="weeklyoff">WO: </string>
+    <string name="nationalholiday">NH: </string>
+    <string name="extraduty">ED: </string>
+    <string name="total_count1">Total(PD+WO): </string>
+    <string name="total_count2">Total(PD+WO+ED+NH): </string>
+    <string name="attendance_sheet_remark">टिप्पणी</string>
+
+    <!-- Attendance -->
+    <string name="attendance_nfc">एनएफसी</string>
+    <string name="attendance_qrcode">क्यूआर कोड</string>
+    <string name="attendance_enter">दर्ज</string>
+    <string name="attendance_enteremployeecode">कर्मचारी कोड दर्ज करें</string>
+    <string name="attendance_employeecode">कर्मचारी कोड</string>
+    <string name="attendance_button_attendancein">अटेंडेंस इन</string>
+    <string name="attendance_button_attendanceout">अटेंडेंस आउट</string>
+
+    <!-- Tour -->
+    <string name="scheduletour_title">सचेडुले टूर</string>
+    <string name="adhoctour_title">एडहॉक चेक प्वाइंट</string>
+
+    <string name="progressbar_values">%1$d / %2$d</string>
+
+    <string name="radio_yes">हाँ</string>
+    <string name="radio_no">नहीं</string>
+    <string name="radio_na">अनुपलब्ध</string>
+
+    <string name="audioRecording_start">रिकॉर्डिंग शुरू</string>
+    <string name="audioRecording_stop">रिकॉर्डिंग बंद करें</string>
+    <string name="audioRecording_count">00:00:00</string>
+
+    <string name="videoRecording_start">शुरु</string>
+    <string name="videoRecording_stop">रुकें</string>
+    <string name="videoRecording_count">00:00:00</string>
+
+    <string name="photoannotation_drawmode">ड्रा मोड</string>
+    <string name="photoannotation_textmode">शब्द जोड़ें</string>
+
+    <string name="sitelist_reportto">साइट प्रभारी : %1$s</string>
+    <string name="readingdetail_answer">उत्तर: %1$s</string>
+
+    <!-- Add expences related -->
+    <string name="expence_travelstartat">यात्रा शुरू हुई: %1$s</string>
+    <string name="expence_travelstartlocation">प्रारंभ स्थान: %1$s</string>
+    <string name="expence_travelmode">यात्रा मोड: %1$s</string>
+    <string name="expence_travelstopat">यात्रा रुक गई: %1$s</string>
+    <string name="expence_travelstoplocation">Stopped Location: %1$s</string>
+    <string name="expence_travelexpence">यात्रा खर्च: %1$s</string>
+    <string name="expence_traveldistance">यात्रा दूरी (मीटर): %1$s</string>
+    <string name="expence_travelduration">यात्रा अवधि (न्यूनतम): %1$s</string>
+    <string name="expence_startlocaddress_hint">स्थान का पता प्रारंभ करें</string>
+    <string name="expence_endlocaddress_hint">End Location address</string>
+    <string name="expence_amout_hint">राशि खर्च</string>
+
+    <!-- Attendance sheet related -->
+    <string name="asheet_totalduties_title">Total Duties: </string>
+    <string name="asheet_totalwoff_title">Total Weeklyoff: </string>
+    <string name="asheet_contrduties_title">Contract Duties: </string>
+    <string name="asheet_noremark_hint">No Remark </string>
+
+    <!-- database queries-->
+    <string name="get_request_question_query">select * from qsetbelonging
+                                                inner join question q on qsetbelonging.questionid=q.questionid
+                                                where questionsetid= %1$d
+                                                order by qsetbelonging.seqno ASC</string>
+    <string name="get_question_query">select qs.questionsetid,q.questionname,q.questionid,q.type,q.unit,q.cuser,q.cdtz,q.muser,q.mdtz, qs.assetid, qsb.min, qsb.max, qsb.option, qsb.seqno, qsb.alerton, qsb.ismandatory,q.alerton from questionset qs inner join qsetbelonging qsb on qsb.questionsetid= qs.questionsetid inner join question q on qsb.questionid = q.questionid where qs.questionsetid= %1$d order by qsb.seqno ASC</string>
+    <string name="get_questionsetname_query">SELECT qsetname FROM questionset WHERE questionsetid= %1$d</string>
+    <string name="get_questionsetcode_query">SELECT qs.questionsetid, qs.qsetname,qs.seqno, ta.taname FROM questionset qs INNER JOIN typeassist ta ON ta.taid=qs.type AND ta.tacode=\'INCIDENTREPORTTEMPLATE\' WHERE qs.parent=-1 AND qs.buid = %1$d</string>
+    <string name="get_siteaudit_questionsetcode_query">SELECT qs.questionsetid, qs.qsetname,qs.seqno, ta.taname FROM questionset qs INNER JOIN typeassist ta ON ta.taid=qs.type AND ta.tacode=\'SITEREPORTTEMPLATE\' WHERE qs.parent=-1  AND qs.buid = %1$d</string>
+
+    <string name="get_siteaudit_templates_query">SELECT qs.questionsetid, qs.qsetname,qs.seqno FROM questionset qs WHERE qs.questionsetid in( %1$s )</string>
+    <string name="get_assetadhoc_templates_query">SELECT qs.questionsetid, qs.qsetname,qs.seqno FROM questionset qs INNER JOIN typeassist ta ON ta.taid=qs.type AND ta.tacode=\'QUESTIONSET\' and tatype=\'Question Set Type\' WHERE qs.questionsetid IN( %1$s )</string>
+    <string name="get_assetmaintance_templates_query">SELECT qs.questionsetid, qs.qsetname,qs.seqno, qs.type, ta.taname FROM questionset qs INNER JOIN typeassist ta ON ta.taid=qs.type AND ta.tacode=\'ASSETMAINTENANCE\' AND tatype=\'Question Set Type\' WHERE qs.questionsetid in( %1$s ) </string>
+    <string name="get_checkpointadhoc_templates_query">SELECT qs.questionsetid, qs.qsetname,qs.seqno, qs.type, ta.taname FROM questionset qs INNER JOIN typeassist ta ON ta.taid=qs.type AND ta.tacode=\'CHECKLIST\' AND tatype=\'Question Set Type\' WHERE qs.questionsetid in( %1$s ) </string>
+
+    <string name="get_question_subsetcode_query">SELECT distinct qs.questionsetid, qs.qsetname,qs.seqno, qsb.questionsetid FROM questionset qs INNER JOIN qsetbelonging qsb ON qsb.questionsetid=qs.questionsetid WHERE qs.parent=%1$d order by qs.seqno</string>
+    <string name="get_sitevisitedlog_query">select * from getcurrentmonthsitevisitlog( %1$d )</string>
+
+    <string name="downloadImageFromWeb">%1$sdownload?filename=%2$s&amp;filepath=%3$s&amp;type=image/png&amp;</string>
+    <string name="title_activity_conveyance">ConveyanceActivity</string>
+
+    <string name="conveyance_not_getting_address_frm_gps">GPS कॉर्डिनेट से पता लाने में सक्षम नहीं, कृपया मैन्युअल रूप से पता दर्ज करें।</string>
+    <string name="conveyance_error_fill_all_info">कृपया सभी जानकारी भरें और फिर यात्रा भ्रमण शुरू करने का प्रयास करें।</string>
+
+
+    <!-- Scan Type Alertview -->
+    <string name="scantypealert_enterassetcode">एस्से कोड दर्ज करें</string>
+    <string name="title_activity_site_report_list">Site Report List Activity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+
+    <string name="no_front_camera">कोई फ्रंट कैमरा नहीं</string>
+    <string name="photoannotation_title">क्या आप फ़ोटो एनोटेशन जोड़ना चाहते हैं?</string>
+
+    <string-array name="units_array">
+        <item>Unit(mts.)</item>
+        <item>Unit(cms.)</item>
+        <item>Unit(ft.)</item>
+        <item>Unit(in.)</item>
+    </string-array>
+
+    <!-- Site Check in, out -->
+    <!--<string name="site_checkout_msg">Please proceed with site <![CDATA[<b><font color=#FF0000>CHECK OUT</font></b>]]> for %1$s</string>-->
+    <!--<string name="site_checkin_msg">Do you want to proceed site <![CDATA[<b><font color=#0000FF>CHECK IN</font></b>]]> for %1$s</string>-->
+    <string name="site_checkout_msg">कृपया साइट के साथ आगे बढ़ें <font fgcolor="#ffff0000">चेक आउट</font> for %1$s</string>
+    <string name="site_checkin_msg">क्या आप साइट आगे बढ़ना चाहते हैं <font fgcolor="#0000FF">चेक इन</font> for %1$s ?</string>
+    <string name="title_activity_site_visited_log_exp_lv">SiteVisitedLogExpLVActivity</string>
+    <string name="site_checkout_msg1">क्या आप साइट आगे बढ़ना चाहते हैं <font fgcolor="#0000FF">चेक आउट</font> for %1$s ?</string>
+    <string name="site_templatenotfound">साइट ऑडिट रिपोर्ट टेम्पलेट नहीं मिले!</string>
+    <string name="site_checkout_msg2">कृपया %1$s के लिए साइट चेक_आउट के साथ आगे बढ़ें</string>
+    <string name="site_submitreport">कृपया %1$s के लिए साइट रिपोर्ट सबमिट करें</string>
+    <string name="checkin_alert_title">चेक इन</string>
+    <string name="checkout_alert_title">चेक आउट</string>
+
+    <string name="error_msg_grant_permission">कृपया सभी अनुमतियां प्रदान करें</string>
+
+    <!--Emergency Contact info-->
+    <string name="emergency_contact_title">आपातकालीन संपर्क</string>
+    <string name="title_adhocjoblistactivity_list">एडहॉक कार्य सूची</string>
+    <string name="title_adhocjoblistactivity_detail">एडहॉककार्य विवरण</string>
+    <string name="title_activity_incident_report_list">घटना की रिपोर्ट सूची</string>
+    <string name="helpdesk_title_item_list">टिकट</string>
+    <string name="title_activity_user_location_view">मैप</string>
+    <string name="title_activity_submit_monthly_attendance">मासिक अटेंडेंस प्रस्तुत करें</string>
+    <string name="title_activity_approve_monthly_attendance">मासिक अटेंडेंस स्वीकृत करें</string>
+
+    <!--question Set and Question-->
+    <string name="doyouwanttoexit">क्या बाहर जाना चाहते हो?</string>
+    <string name="fill_value_email_hint">abc@gmail.com</string>
+    <string name="fill_value_dob_hint">1 जनवरी 1970</string>
+
+    <string name="title_attachment_list">प्रमाण</string>
+    <string name="title_sitevisitlog">साइट देखी गई लॉग</string>
+    <string name="ir_comments">Comment</string>
+
+    <string name="title_activity_workflow">वर्कफ़्लो</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_task_list">टास्क सूची</string>
+    <string name="title_home">होम</string>
+    <string name="title_dashboard">डैशबोर्ड</string>
+    <string name="title_notifications">सूचनाएं</string>
+    <string name="title_activity_task_details">टास्क विवरण</string>
+    <string name="title_activity_asset_audit">एसेट ऑडिट</string>
+    <string name="title_activity_ticket_view">टिकट दृश्य</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_leave_managment">Leave Managment</string>
+    <string name="get_question_count_query">select count(*) from questionset qs inner join qsetbelonging qsb on qsb.questionsetid= qs.questionsetid inner join question q on qsb.questionid = q.questionid where qs.questionsetid= %1$d order by qsb.seqno ASC</string>
+    <string name="get_assetauditadhoc_templates_query">SELECT qs.questionsetid, qs.qsetname,qs.seqno, qs.type, ta.taname FROM questionset qs INNER JOIN typeassist ta ON ta.taid=qs.type AND ta.tacode=\'ASSETAUDIT\' AND tatype=\'Question Set Type\' ORDER BY qs.seqno ASC </string>
+    <string name="jobneeddetails_jQuestionSet">प्रश्न सेट:</string>
+
+    <!--added on 30 may 2019-->
+    <string name="take_attendance_enter_employee_code">कृपया कर्मचारी कोड दर्ज करें</string>
+    <string name="take_attendance_mark_present_msg">धन्यवाद, कर्मचारी उपस्थित</string>
+    <string name="take_attendance_entercode_type">कर्मचारी कोड / संख्या</string>
+    <string name="adhoc_checkpoint_completed_msg">एडहॉक चेक प्वाइंट पूरा हुआ।</string>
+    <string name="conveyance_runningstory_empty_msg">आपकी खर्च स्थिति यहां दिखाई जाएगी।</string>
+    <string name="conveyance_runningstory_start_msg">आपकी यात्रा %1$s से %2$s पर %3$s से शुरू हुई</string>
+    <string name="conveyance_runningstory_end_msg">आपकी यात्रा %1$s से शुरू होकर %2$s पर %3$s \n ------- \n %4$s पर %5$s पर रुकी</string>
+    <string name="conveyance_history_title">खर्च इतिहास</string>
+    <string name="conveyance_history_not_fount">खर्च इतिहास नहीं  मिला।</string>
+    <string name="irlistactivity_reportsubmittedalready">पहले ही प्रस्तुत किया जा चुका है।</string>
+    <string name="login_not_get_deviceimei">डिवाइस की जानकारी लाने में सक्षम नहीं है</string>
+    <string name="photoannotation_alerttitle">फोटो एनोटेशन</string>
+    <string name="photoannotation_addtexttoimage">Add text to image</string>
+    <string name="serverselection_notablefetchinfo">जानकारी प्राप्त करने में सक्षम नहीं, कृपया पुनः प्रयास करें।</string>
+    <string name="serverselection_provideclientcode">कृपया क्लाइंट कोड प्रदान करें</string>
+    <string name="srtemplate_chkout_succeed">साइट की जाँच सफलतापूर्वक</string>
+    <string name="srtemplate_onereport_needtofill">कम से कम एक रिपोर्ट भरने की आवश्यकता है</string>
+    <string name="srtemplate_chkout_withoutform">कृपया फॉर्म भरने के बिना चेकआउट का कारण दर्ज करें।</string>
+    <string name="sitevisitlog_findinguserlog">Finding users site log history, Please wait..</string>
+    <string name="sos_simnotavailabel">सिम कार्ड उपलब्ध नहीं है</string>
+    <string name="buzzer_dialog_title">बजर</string>
+    <string name="buzzer_error_captchanotmatched">कैप्चा मेल नहीं हुआ !!</string>
+    <string name="buzzer_error_captchanotentered">कैप्चा दर्ज नहीं किया गया !!</string>
+    <string name="stepcounter_reconfig_succeed">पुनः कॉन्फ़िगर किया गया सफल</string>
+    <string name="stepcounter_totalstepcount">कुल चरण गणना: </string>
+    <string name="jobneeddetails_detailsnotfound">काम का विवरण नहीं मिला।</string>
+    <string name="quetsetdetails_title">प्रश्न सेट विवरण</string>
+    <string name="tasklist_bottomnavigation_count">गिनती</string>
+    <string name="ticketdetails_ticketresolved">टिकट का समाधान हो गया है।</string>
+    <string name="ticketdetails_replyhistorynotfound">टिकट रिप्लाई इतिहास नहीं मिला।</string>
+    <string name="ticketdetails_attachmenthistorynotfound">टिकट प्रमाण इतिहास नहीं मिला</string>
+    <string name="ticketview_autoclosetab">ऑटो बंद टिकट</string>
+    <string name="ticketview_nomorerecord">और कोई रिकॉर्ड नहीं।</string>
+    <string name="ticketview_nomoreautoclosedrecord">ऑटो बंद टिकट नहीं मिला</string>
+    <string name="userlocationview_findinguserlocation">उपयोगकर्ता अंतिम ज्ञात स्थान ढूंढ रहा है, कृपया प्रतीक्षा करें ..</string>
+    <string name="videorecording_recordvideomoreseconds">क्या आप अधिक %1$d सेकंड के लिए वीडियो रिकॉर्ड करना चाहते हैं?</string>
+    <string name="fill_value_enternumval_msg">कृपया संख्यात्मक मान दर्ज करें</string>
+    <string name="fill_value_charremains">चार अवशेष: %1$d / 250</string>
+    <string name="sitelistview_siteincharge">साइट प्रभारी</string>
+    <string name="sitelistview_siteinchargenotavail">साइट प्रभारी उपलब्ध नहीं है</string>
+    <string name="sitelistview_siteincharge_dialogtitle">साइट इंचार्ज का नाम</string>
+    <string name="sitelistview_numbercopied">संपर्क नंबर कॉपी किया गया।</string>
+    <string name="attendance_registered">अटेंडेंस दर्ज की गई। धन्यवाद।</string>
+    <string name="joblist_autoclosed_title">ऑटो बंद</string>
+    <string name="assetsummary_totalasset">कुल एसेट्स:</string>
+    <string name="feedbackform_fillallinfo">कृपया फॉर्म भरें..</string>
+    <string name="othersite_addnew_error">कृपया साइट का नाम चुनें या नया साइट नाम दर्ज करें</string>
+    <string name="alertdialog_sitechkoutremark">कृपया टिप्पणी दर्ज करें</string>
+    <string name="alertdialog_enteremp_or_ticketnumber">कृपया कर्मचारी कोड / टिकट नंबर दर्ज करें</string>
+    <string name="login_failed">लॉगिन विफल</string>
+    <string name="title_activity_ppmplanner_view">PPM Planner View</string>
+    <string name="title_sitenotvisited">साइट देखी नहीं गई</string>
+
+    <!--Request View Activity-->
+    <string name="request_id">आईडी</string>
+    <string name="request_type">अनुरोध का प्रकार</string>
+    <string name="request_template">अनुरोध टेम्पलेट</string>
+    <string name="request_on">अनुरोध पर</string>
+    <string name="request_details">विवरण</string>
+    <string name="request_details_title">अनुरोध विवरण</string>
+    <string name="request_showtemplatelist">टेम्प्लेट सूची दिखाएं</string>
+    <string name="request_showrequestedlist">अनुरोधित सूची दिखाएं</string>
+
+
+    <string name="module_request_code">REQUEST</string>
+    <string name="module_request">निवेदन</string>
+
+    <string name="gps_coordinate_notavailable">जीपीएस निर्देशांक उपलब्ध नहीं हैं</string>
+
+    <!--Sync Summary view-->
+    <string name="lsynsummary_title">अंतिम सिंक सारांश</string>
+    <string name="lsynsummary_name">नाम</string>
+    <string name="lsynsummary_succeed">सफल</string>
+    <string name="lsynsummary_failed">अनुत्तीर्ण होना</string>
+
+    <string name="assetsummary_dialog_title">एसेट सारांश</string>
+
+    <!--Site information-->
+    <string name="siteinfo_sitename">साइट का नाम</string>
+    <string name="siteinfo_siteadd">पता</string>
+    <string name="siteinfo_sitelandmark">सीमा चिन्ह</string>
+    <string name="siteinfo_sitepcode">डाक कोड</string>
+    <string name="siteinfo_sitegps">जीपीएस समन्वय</string>
+    <string name="siteinfo_sitetotalstrength">कुल ताकत</string>
+    <string name="siteinfo_sitedetails">विवरण</string>
+    <string name="siteinfo_sitecontactperson">संपर्क व्यक्ति</string>
+    <string name="siteinfo_sitecontactnumber">संपर्क नंबर</string>
+
+    <string name="selectpunchtype_dialogtitle">पंच प्रकार का चयन करें</string>
+    <string name="take_attendance_present">मौजूद</string>
+    <string name="take_attendance_captemppic">कर्मचारी की तस्वीर कैद करें</string>
+    <string name="take_attendance_selfiewithemp">कर्मचारी के साथ सेल्फी लें</string>
+
+    <string name="othersite_dialog_title">अन्य साइट</string>
+    <string name="othersite_dialog_searchsitename">साइट का नाम खोजें</string>
+    <string name="othersite_dialog_sitenotavail_newsite">यदि साइट सूची में उपलब्ध नहीं है, तो नया साइट नाम दर्ज करें</string>
+    <string name="othersite_dialog_clientname">Client का नाम</string>
+
+    <string name="ngentry_pdetail_header">व्यक्तिगत विवरण</string>
+    <string name="ngentry_refby_hint">द्वारा उल्लिखित</string>
+    <string name="ngentry_dob">जन्म की तारीख</string>
+    <string name="ngentry_maritalstatus">वैवाहिक स्थिति</string>
+    <string name="ngentry_gender">लिंग</string>
+    <string name="ngentry_qualificationdetails">कार्य / योग्यता विवरण</string>
+    <string name="ngentry_exp_year">वर्षों</string>
+    <string name="ngentry_exp_month">महीने</string>
+    <string name="ngentry_edu_qualification_dropdown">शैक्षिक योग्यता</string>
+    <string name="ngentry_canspeekenglish">कैन स्पिक इंग्लिश लैंग्वेज</string>
+    <string name="ngentry_doctype">दस्तावेज़ का प्रकार</string>
+    <string name="ngentry_docnumber">दस्तावेज़ संख्या</string>
+    <string name="ngentry_capt_idphoto">आईडी फोटो कैप्चर करें</string>
+    <string name="ngentry_docsummary">संलग्न दस्तावेज इस प्रकार है</string>
+    <string name="ngentry_previous_button">पिछला</string>
+    <string name="ngentry_next_button">आगामी</string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/view1"
+        android:background="@color/listviewDivider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/sectionLinerlayout"
+        android:background="@drawable/section_background"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/qsetNameTextview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:maxLines="2"
+            android:layout_weight="0.1"
+            android:padding="5dp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:visibility="visible"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:id="@+id/audioSecCount"
+            android:src="@drawable/ic_menu_audio"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:visibility="visible"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:id="@+id/videoSecCount"
+            android:src="@drawable/ic_menu_video"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:visibility="visible"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:id="@+id/picSecCount"
+            android:src="@drawable/ic_menu_picture"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/view2"
+        android:background="@color/listviewDivider"/>
+
+</LinearLayout>

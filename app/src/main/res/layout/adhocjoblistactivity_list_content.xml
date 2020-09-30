@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:orientation="vertical">
+
+    <!-- this can be replace with one textview and compound drawable-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:id="@+id/colorCodeBullet"
+            android:layout_gravity="start|center"/>
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:padding="3dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin10dp"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:text=""
+            android:padding="3dp"
+            android:layout_marginStart="@dimen/text_margin10dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Medium"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/jnPDateDesc"
+            android:text=""
+            android:padding="1dp"
+            android:layout_marginStart="@dimen/text_margin10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="1dp"
+        android:background="@color/listviewDivider"/>
+</LinearLayout>

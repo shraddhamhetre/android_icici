@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/alertTitle"
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/lsynsummary_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view0"
+        android:background="@color/listviewDivider"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:background="@color/listviewDivider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/screen_appbar_color"
+        android:padding="@dimen/activity_10_margin"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="@string/lsynsummary_name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="@string/lsynsummary_succeed" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="@string/lsynsummary_failed" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/listviewDivider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_5_margin"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:textColor="@android:color/black"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:text="ADHOC" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:id="@+id/adhocSucceedCnt"
+            android:text="0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:id="@+id/adhocFailedCnt"
+            android:text="0" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/listviewDivider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_5_margin"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:textColor="@android:color/black"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:text="IR" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:id="@+id/irSucceedCnt"
+            android:text="0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:id="@+id/irFailedCnt"
+            android:text="0" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/listviewDivider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_5_margin"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:textColor="@android:color/black"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:text="Task" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:id="@+id/jnupdateSucceedCnt"
+            android:text="0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:id="@+id/jnupdateFailedCnt"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/listviewDivider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_5_margin"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:textColor="@android:color/black"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:text="Employee Ref" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:id="@+id/emprefSucceedCnt"
+            android:text="0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/emprefFailedCnt"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:text="0" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/listviewDivider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_5_margin"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:textColor="@android:color/black"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:text="Site Audit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:id="@+id/saSucceedCnt"
+            android:text="0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_margin="@dimen/activity_5_margin"
+            android:id="@+id/saFailedCnt"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/activity_5_margin"
+        android:id="@+id/readingCapturedTextview"
+        android:text="Reading Captured" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:id="@+id/syncSummaryOk"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="@drawable/rounder_corner_button"
+        android:text="@string/button_ok"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>-->
+
+    <!--<color name="colorPrimary">#193466</color>
+    <color name="colorPrimaryDark">#193466</color>
+    <color name="colorAccent">#193466</color>-->
+
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#263238</color>
+    <color name="colorAccent">#26A1AB</color>
+
+    <color name="listviewDivider">#CFD8DC</color>
+
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="colorNavText">#01294b</color>
+
+    <color name="button_background_faint">#51b3bb</color>
+    <color name="button_background">#26A1AB</color>
+    <color name="button_delete_background">#E12330</color>
+    <color name="button_action_background">#217EBD</color>
+    <color name="button_cancel_background">#C2CAD8</color>
+    <color name="description_color">#62BFF5</color>
+    <color name="text_header">#333339</color>
+    <color name="text_color">#8795A7</color>
+    <color name="screen_header_text">#32C5D2</color>
+    <color name="listview_background">#EEF1F5</color>
+    <color name="edittext_background">#DDE3EC</color>
+    <color name="web_screen_background">#364150</color>
+
+    <color name="screen_statusbar_color">#000000</color>
+    <color name="screen_appbar_color">#000000</color>
+    <color name="screen_background_color">#303030</color>
+    <color name="screen_card_dialog_color">#424242</color>
+
+    <color name="colorListRowDate">#18B064</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="gray1">#333333</color>
+
+
+
+    <color name="background">#f9f2e0</color>
+    <color name="title_text">#7A3F1A</color>
+    <color name="foreground1">#A7B2DC</color>
+    <color name="background2">#ffd5ddeb</color>
+    <color name="alertview_semi_trans">#80000000</color>
+    <color name="title_separator">#40ffffff</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#66000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorRed">#ffff0000</color>
+    <color name="colorYellow">#ffff00</color>
+    <color name="colorBlue">#00008b</color>
+    <color name="colorGreen">#228b22</color>
+    <color name="colorOrange">#FF5733</color>
+
+    <color name="light_gray">#ABBAC2</color>
+    <color name="coral_blue">#1DAEFA</color>
+    <color name="dark_blue">#125D9D</color>
+
+    <color name="circleProgressCompleteStartGradient">@color/dark_blue</color>
+    <color name="circleProgressCompleteEndGradient">@color/coral_blue</color>
+    <color name="circleProgressIncompleteStartGradient">@color/light_gray</color>
+    <color name="circleProgressIncompleteEndGradient">@color/light_gray</color>
+
+    <!--<color name="blue_color">#FF00DEFF</color>
+    <color name="bottombar_green_color">#16BB9B</color>
+    <color name="bottombar_yellow_color">#F7A72E</color>
+    <color name="green">#ff008000</color>
+    <color name="gray">#909090</color>
+    <color name="orange">#ffFFA500</color>
+    <color name="light_blue">#ff5fc2e7</color>
+    <color name="white_divider">#ffffff</color>
+    <drawable name="list_divider_color">#b5b5b5</drawable>
+    <color name="view_divider">#dcdbdb</color>
+    <color name="dark_orange">#DA986F</color>
+    <color name="list_background">#1B1918</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="black_color">#000000</color>
+    <color name="dashboard_text_color">#A2612B</color>
+    <color name="orange_text_color">#A2612B</color>
+    <color name="dark_orange_text_color">#735326</color>
+    <color name="blue_text_color">#00ADEF</color>
+    <color name="reading_title_color">#040404</color>-->
+
+
+</resources>

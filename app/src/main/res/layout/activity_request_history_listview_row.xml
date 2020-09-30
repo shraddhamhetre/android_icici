@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:padding="@dimen/activity_5_margin"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/requestType"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:padding="3dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin10dp"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+    <TextView
+        android:id="@+id/requestDesc"
+        android:text=""
+        android:padding="1dp"
+        android:layout_marginStart="@dimen/text_margin10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:textAppearance="@android:style/TextAppearance.Small"/>
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/listviewDivider"/>-->
+</LinearLayout>

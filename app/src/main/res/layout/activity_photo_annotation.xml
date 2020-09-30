@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.youtility.intelliwiz20.Activities.PhotoAnnotationActivity">
+
+    <!--<android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>-->
+
+    <include layout="@layout/content_photo_annotation"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabOvel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_draw_eclipse"
+        app:backgroundTint="@color/button_background"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="240dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_draw_circle_white_24dp"
+        app:backgroundTint="@color/button_background"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabRectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_draw_rect_white_24dp"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:backgroundTint="@color/button_background"
+        app:pressedTranslationZ="12dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_draw_line_white_24dp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/button_background"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabFreehand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:srcCompat="@drawable/ic_mode_edit_white_24dp"
+        app:backgroundTint="@color/button_background"
+        app:pressedTranslationZ="12dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabShapes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/drawing_mode"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="330dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:backgroundTint="@color/colorBlue"
+        app:pressedTranslationZ="12dp"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabYellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="285dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:backgroundTint="@color/colorYellow"
+        app:pressedTranslationZ="12dp"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="240dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:backgroundTint="@color/colorGreen"
+        app:pressedTranslationZ="12dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="195dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:backgroundTint="@color/colorRed"
+        app:pressedTranslationZ="12dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:backgroundTint="@color/colorWhite"
+        app:pressedTranslationZ="12dp"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="105dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:backgroundTint="@color/colorGray"
+        app:pressedTranslationZ="12dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:backgroundTint="@color/colorBlack"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabColors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/colorwheel"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_save_white_24dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

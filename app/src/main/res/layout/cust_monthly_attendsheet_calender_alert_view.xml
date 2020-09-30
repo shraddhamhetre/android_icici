@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/listview_background"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/alertTitle"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/alerttitle"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view0"
+            android:background="@color/listviewDivider"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view1"
+            android:background="@color/listviewDivider"/>
+
+        <TextView
+            android:id="@+id/userAttendanceDatesAlertTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_line"
+            android:textColor="@android:color/black"
+            android:lines="1"
+            android:layout_margin="@dimen/text_margin5dp"
+            android:gravity="center"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:weightSum="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_margin="3dp"
+                    android:id="@+id/alertReset"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/rounder_cancel_button"
+                    android:text="@string/button_cancel"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/alertDone"
+                    android:layout_margin="3dp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/button_submit"
+                    android:background="@drawable/rounder_corner_button"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_weight="0.5"/>
+        </LinearLayout>
+
+</LinearLayout>

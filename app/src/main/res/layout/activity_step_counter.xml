@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background_color"
+    tools:context="com.youtility.intelliwiz20.Activities.StepCounterActivity">
+
+    <!--<TextView
+        android:id="@+id/stepCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step Counts : 0"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size28dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/stepCountTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/text_size18dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/stepCountTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <EditText
+        android:id="@+id/startDateEditText"
+        android:layout_width="151dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintRight_toLeftOf="@+id/startTimeEditText"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/endTimeEditText"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.458"
+        tools:layout_editor_absoluteX="108dp" />
+
+    <EditText
+        android:id="@+id/startTimeEditText"
+        android:layout_width="133dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="HH:mm:ss"
+        android:inputType="time"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/stepCountTextView"
+        app:layout_constraintVertical_bias="0.109"
+        tools:layout_editor_absoluteY="27dp"
+        tools:layout_editor_absoluteX="262dp" />
+
+    <EditText
+        android:id="@+id/endDateEditText"
+        android:layout_width="150dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintRight_toLeftOf="@+id/endTimeEditText"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/stepCountTextView"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/startDateEditText"
+        app:layout_constraintVertical_bias="0.196" />
+
+    <EditText
+        android:id="@+id/endTimeEditText"
+        android:layout_width="128dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="HH:mm:ss"
+        android:inputType="time"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/startTimeEditText"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/stepCountTextView"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <Button
+        android:id="@+id/configButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Config"
+        android:background="@color/button_action_background"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/endTimeEditText"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/stepCountTextView"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintVertical_bias="0.235" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.108"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.023" />-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/rounded_border_white_solid"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start from: "
+                android:layout_weight="0.40"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/startDateEditText"
+                android:ems="10"
+                android:textSize="@dimen/text_size15dp"
+                android:text=""
+                android:inputType="date"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.30"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/startTimeEditText"
+                android:ems="10"
+                android:hint="HH:mm:ss"
+                android:inputType="time"
+                android:textSize="@dimen/text_size15dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="0.30"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End to: "
+                android:layout_weight="0.40"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/endDateEditText"
+                android:ems="10"
+                android:textSize="@dimen/text_size15dp"
+                android:inputType="date"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.30"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/endTimeEditText"
+                android:ems="10"
+                android:textSize="@dimen/text_size15dp"
+                android:hint="HH:mm:ss"
+                android:inputType="time"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="0.30"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/activity_10_margin"
+            android:layout_marginBottom="@dimen/activity_10_margin"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="end|center"
+                android:text="Buzzer play in min: "/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buzzerTimeSpinner"
+                android:layout_weight="0.7">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="end"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/activity_10_margin"
+            android:layout_marginBottom="@dimen/activity_10_margin"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/stepCountEnable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step Count Enable"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/configButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reschedule"
+            android:layout_gravity="center|end"
+            android:background="@drawable/rounder_corner_button"
+            android:textColor="@android:color/white"
+            android:padding="@dimen/activity_5_margin"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_20_margin"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/stepCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step Counts : 0"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" />
+
+            <TextView
+                android:id="@+id/stepCountTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:textSize="@dimen/text_size12dp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/stepCountTextView"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/listviewDivider"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/stepcount_historyLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

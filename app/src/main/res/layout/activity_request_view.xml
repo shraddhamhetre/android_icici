@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewGroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bground" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/llTemplate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            app:layout_widthPercent="85%">
+
+            <com.youtility.intelliwiz20.Utils.VerticalTextView
+                android:id="@+id/txtTemplates"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:rotation="180"
+                android:text="@string/request_showtemplatelist"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/layout_request_template_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRequests"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#EAECEE"
+            android:orientation="horizontal"
+            app:layout_widthPercent="15%">
+
+            <com.youtility.intelliwiz20.Utils.VerticalTextView
+                android:id="@+id/txtRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:rotation="180"
+                android:text="@string/request_showrequestedlist"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:visibility="visible" />
+
+            <include
+                layout="@layout/layout_request_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+
+</RelativeLayout>
+
+<!--
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RequestViewActivity">
+
+</android.support.constraint.ConstraintLayout>-->

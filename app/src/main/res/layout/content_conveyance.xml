@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.youtility.intelliwiz20.Activities.ConveyanceActivity"
+    android:background="@color/colorWhite"
+    tools:showIn="@layout/activity_conveyance"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.20"
+        android:visibility="visible">
+        <LinearLayout
+            android:id="@+id/startTravelLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="1">
+
+
+
+            <TextView
+                android:id="@+id/startGpsAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:background="#abe7ed"
+                android:gravity="center"
+                android:drawableEnd="@android:drawable/stat_notify_sync"
+                android:lines="5"
+                android:padding="@dimen/text_margin2dp"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/startGpsAddressManually"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:hint="@string/expence_startlocaddress_hint"
+                android:enabled="false"
+                android:visibility="visible" />
+
+            <GridView
+                android:id="@+id/travelModeGridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp"
+                android:visibility="visible" />
+
+            <Spinner
+                android:id="@+id/travelModeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:visibility="gone" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/endTravelLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/endGpsAddress"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.50"
+                android:background="#f3a5aa"
+                android:drawableEnd="@android:drawable/stat_notify_sync"
+                android:lines="5"
+                android:gravity="center"
+                android:padding="@dimen/text_margin2dp"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/endGpsAddressManually"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/expence_endlocaddress_hint"
+                android:layout_weight="0.10"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:enabled="false"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/travelExpenceAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/expence_amout_hint"
+                android:layout_weight="0.05"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/listviewDivider"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="start|center"
+        android:layout_weight="0.35"
+        android:visibility="visible"
+        android:weightSum="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="visible">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="0.2"
+                    android:id="@+id/conveyanceRunningState"
+                    android:textColor="@color/colorBlack"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.8"
+                    android:weightSum="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/startReadingImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_margin5dp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:id="@+id/stopReadingImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_margin5dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/startTravelTimeTextview"
+                    android:layout_margin="@dimen/text_margin2dp"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:text="@string/expence_travelstartat"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/view0"
+                    android:background="@color/listviewDivider"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin2dp"
+                    android:id="@+id/startTravelLocationTextview"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:text="@string/expence_travelstartlocation"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/listviewDivider"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin2dp"
+                    android:id="@+id/travelModeTextview"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:text="@string/expence_travelmode"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/listviewDivider"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin2dp"
+                    android:id="@+id/endTravelTimeTextview"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:text="@string/expence_travelstopat"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/listviewDivider"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin2dp"
+                    android:id="@+id/endTravelLocationTextview"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:text="@string/expence_travelstoplocation"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/listviewDivider"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin2dp"
+                    android:id="@+id/travelExpenceTextview"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:text="@string/expence_travelexpence"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/listviewDivider"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin2dp"
+                    android:id="@+id/travelDistanceTextview"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:text="@string/expence_traveldistance"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/listviewDivider"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin2dp"
+                    android:id="@+id/travelDurationTextview"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:text="@string/expence_travelduration"/>
+            </LinearLayout>-->
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="start|center"
+        android:layout_weight="0.45"
+        android:visibility="visible"
+        android:background="@color/result_view"
+        android:weightSum="1">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/startTravelButton"
+            android:background="@drawable/rounder_corner_button"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="@dimen/text_margin5dp"
+            android:text="@string/button_start"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/stopTravelButton"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rounder_delete_button"
+            android:layout_margin="@dimen/text_margin5dp"
+            android:text="@string/button_stop"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="ConveyanceActivity"
+        android:background="@color/web_screen_background"
+        tools:showIn="@layout/activity_conveyance">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scrollbars="none"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:numColumns="4"
+                    android:id="@+id/travelModeGridview1"
+                    android:scrollbars="none"
+                    android:verticalSpacing="15dp"
+                    android:horizontalSpacing="10dp"
+                    android:stretchMode="columnWidth"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/activity_10_margin"
+                    android:layout_gravity="center"
+                    android:weightSum="1">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="OVER"
+                        android:id="@+id/overButton"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/white"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/borderless_button"/>
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimaryDark"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.50"
+                        android:weightSum="1">
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pause"
+                            android:id="@+id/pauseButton"
+                            android:textColor="@android:color/white"
+                            android:layout_weight="0.50"
+                            android:background="@drawable/borderless_button"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.50"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:weightSum="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:id="@+id/pTimeTextview"
+                                android:textColor="@android:color/white"
+                                android:layout_weight="0.333"
+                                android:text="T"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:id="@+id/pDistanceTextview"
+                                android:textColor="@android:color/white"
+                                android:layout_weight="0.333"
+                                android:text="D"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:id="@+id/pMoneyTextview"
+                                android:textColor="@android:color/white"
+                                android:layout_weight="0.334"
+                                android:text="M"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:lines="5"
+                    android:layout_margin="@dimen/activity_10_margin"
+                    android:background="@drawable/rounded_border_trans_solid"
+                    android:scrollbars="none"
+                    android:id="@+id/runningStroyTextview"
+                    android:gravity="center"
+                    android:text="Running story about clicked button and current location address "/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin10dp"
+                    android:lines="3"
+                    android:id="@+id/remarkEdittext"
+                    android:hint="Add some remark or narration"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin10dp"
+                    android:id="@+id/travelExpenceAmountEdittext"
+                    android:hint="Add expences in Rs."
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Really over"
+                    android:id="@+id/reallyButton"
+                    android:layout_margin="@dimen/activity_10_margin"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/rounded_border_trans_solid"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:weightSum="1"
+            android:visibility="visible"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:scrollbars="none">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/startTravelLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_border_white_solid"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/startGpsAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:background="#abe7ed"
+                            android:drawableEnd="@android:drawable/stat_notify_sync"
+                            android:lines="4"
+                            android:padding="@dimen/text_margin2dp"
+                            android:text="" />
+
+                        <EditText
+                            android:id="@+id/startGpsAddressManually"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:hint="@string/expence_startlocaddress_hint"
+                            android:visibility="invisible" />
+
+                        <GridView
+                            android:id="@+id/travelModeGridview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.50"
+                            android:horizontalSpacing="5dp"
+                            android:numColumns="4"
+                            android:scrollbars="none"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="5dp"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/travelModeBike"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center"
+                                    android:text="Bike"
+                                    android:textColor="@color/listviewDivider" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="50dp"
+                                    android:background="@color/listviewDivider" />
+
+                                <TextView
+                                    android:id="@+id/travelModeBus"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center"
+                                    android:text="Bus"
+                                    android:textColor="@color/listviewDivider" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="50dp"
+                                    android:background="@color/listviewDivider" />
+
+                                <TextView
+                                    android:id="@+id/travelModeTrain"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center"
+                                    android:text="Train"
+                                    android:textColor="@color/listviewDivider" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="50dp"
+                                    android:background="@color/listviewDivider" />
+
+                                <TextView
+                                    android:id="@+id/travelModeRickshaw"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center"
+                                    android:text="Rickshaw"
+                                    android:textColor="@color/listviewDivider" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/listviewDivider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/travelModeCab"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center"
+                                    android:text="Cab"
+                                    android:textColor="@color/listviewDivider" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="50dp"
+                                    android:background="@color/listviewDivider" />
+
+                                <TextView
+                                    android:id="@+id/travelModeCar"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center"
+                                    android:text="Car"
+                                    android:textColor="@color/listviewDivider" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="50dp"
+                                    android:background="@color/listviewDivider" />
+
+                                <TextView
+                                    android:id="@+id/travelModeBoat"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center"
+                                    android:text="Boat"
+                                    android:textColor="@color/listviewDivider" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="50dp"
+                                    android:background="@color/listviewDivider" />
+
+                                <TextView
+                                    android:id="@+id/travelModePlane"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center"
+                                    android:text="Plane"
+                                    android:textColor="@color/listviewDivider" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <Spinner
+                            android:id="@+id/travelModeSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/endTravelLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_border_white_solid"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:id="@+id/endGpsAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:background="#f3a5aa"
+                            android:drawableEnd="@android:drawable/stat_notify_sync"
+                            android:lines="4"
+                            android:padding="@dimen/text_margin2dp"
+                            android:text="" />
+
+                        <EditText
+                            android:id="@+id/endGpsAddressManually"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:hint="@string/expence_endlocaddress_hint"
+                            android:visibility="invisible" />
+
+                        <EditText
+                            android:id="@+id/travelExpenceAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:hint="@string/expence_amout_hint"
+                            android:inputType="numberDecimal" />
+                    </LinearLayout>
+                </FrameLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="start|center"
+                android:layout_weight="0.05"
+                android:visibility="visible"
+                android:weightSum="1">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/startTravelButton"
+                    android:background="@drawable/rounder_corner_button"
+                    android:textColor="@color/colorWhite"
+                    android:layout_margin="@dimen/text_margin5dp"
+                    android:text="@string/button_start"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/stopTravelButton"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/rounder_delete_button"
+                    android:layout_margin="@dimen/text_margin5dp"
+                    android:text="@string/button_stop"/>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:visibility="visible"
+                android:background="@drawable/rounded_border_white_solid"
+                android:layout_weight="0.30">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/startTravelTimeTextview"
+                        android:layout_margin="@dimen/text_margin2dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/expence_travelstartat"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:id="@+id/view0"
+                        android:background="@color/listviewDivider"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_margin2dp"
+                        android:id="@+id/startTravelLocationTextview"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/expence_travelstartlocation"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/listviewDivider"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_margin2dp"
+                        android:id="@+id/travelModeTextview"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/expence_travelmode"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/listviewDivider"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_margin2dp"
+                        android:id="@+id/endTravelTimeTextview"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/expence_travelstopat"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/listviewDivider"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_margin2dp"
+                        android:id="@+id/endTravelLocationTextview"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/expence_travelstoplocation"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/listviewDivider"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_margin2dp"
+                        android:id="@+id/travelExpenceTextview"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/expence_travelexpence"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/listviewDivider"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_margin2dp"
+                        android:id="@+id/travelDistanceTextview"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/expence_traveldistance"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/listviewDivider"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_margin2dp"
+                        android:id="@+id/travelDurationTextview"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/expence_travelduration"/>
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>-->
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_10_margin"
+        android:id="@+id/linerlayoutJType"
+        android:background="@android:color/black"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.333"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:layout_margin="1dp"
+            android:id="@+id/assignedTextview"
+            android:textColor="@android:color/white"
+            android:text="@string/joblist_pending_title"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_weight="0.333"
+            android:textStyle="bold"
+            android:layout_margin="1dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/completedTextview"
+            android:text="@string/joblist_completed_title"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_weight="0.334"
+            android:textStyle="bold"
+            android:layout_margin="1dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/autoclosedTextview"
+            android:text="@string/joblist_all_title"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/item_list"
+        android:layout_below="@id/linerlayoutJType"
+        android:name="in.youtility.intelliwiz20.Activities.ItemListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scrollbars="vertical"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="com.youtility.intelliwiz20.Activities.JOBListActivity"
+        tools:listitem="@layout/job_item_list_content" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/data_not_found" />
+</RelativeLayout>
